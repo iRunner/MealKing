@@ -3,7 +3,6 @@
 
 target "MealKing" do
 
-pod 'FUIVerticalTabBarController', '~> 1.0.3'
 
 end
 
