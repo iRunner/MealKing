@@ -14,7 +14,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        
+        NSLog(@"bg");
+        UIImageView *whiteBG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"white_bg.png"]];
+        [self setBackgroundView:whiteBG];
+
     }
     return self;
 }

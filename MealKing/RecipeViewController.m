@@ -28,10 +28,9 @@
     NSLog(@"hit the right VC");
     [super viewDidLoad];
     
+    
     //set the tableView
-    UIImageView *whiteBG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"white_bg.png"]];
-    [self.ingredientsList setBackgroundView:whiteBG];
-    [self.stepsList setBackgroundView:whiteBG];
+    //[self.stepsList setBackgroundView:whiteBG];
 }
 
 - (void)didReceiveMemoryWarning

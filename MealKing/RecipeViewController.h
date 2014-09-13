@@ -16,5 +16,10 @@
 @property (weak, nonatomic) IBOutlet UITableView *stepsList;
 @property (weak, nonatomic) IBOutlet UIView *infoView;
 
+//properties of the InfoView
+@property (weak, nonatomic) IBOutlet UILabel *favoritesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *difficultyLabel;
+
 
 @end
