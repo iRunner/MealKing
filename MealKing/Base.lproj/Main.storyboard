@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="COW-sE-3ov">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recipe View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeInfo" id="BYZ-38-t0r" customClass="RecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -109,6 +109,12 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="foodPic" destination="Jaw-yQ-xcE" id="Zjl-bN-usj"/>
+                        <outlet property="infoView" destination="giv-rO-mk4" id="e9w-0z-oFZ"/>
+                        <outlet property="ingredientsList" destination="WAP-la-bsi" id="HVB-fh-lXw"/>
+                        <outlet property="stepsList" destination="l9E-S8-Wha" id="eyv-JX-k9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +123,7 @@
         <!--View Controller-->
         <scene sceneID="Ud7-XH-MQy">
             <objects>
-                <viewController id="rUO-lY-CvZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeSteps" id="rUO-lY-CvZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MvS-rV-cKd"/>
                         <viewControllerLayoutGuide type="bottom" id="14E-Kk-geF"/>
@@ -193,7 +199,7 @@
         <!--View Controller-->
         <scene sceneID="vhB-Gc-H7j">
             <objects>
-                <viewController id="COW-sE-3ov" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipes" id="COW-sE-3ov" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Cr-0s-D9x"/>
                         <viewControllerLayoutGuide type="bottom" id="8zy-Gk-XIa"/>

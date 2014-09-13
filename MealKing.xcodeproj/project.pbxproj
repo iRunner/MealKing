@@ -18,6 +18,10 @@
 		17C2139F19C4C6AF00A0D30D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139A19C4C6AF00A0D30D /* profile.png */; };
 		17C213A019C4C6AF00A0D30D /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139B19C4C6AF00A0D30D /* recipes.png */; };
 		17C213A119C4C6AF00A0D30D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139C19C4C6AF00A0D30D /* settings.png */; };
+		17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213A819C4DB3C00A0D30D /* ListTableViewController.m */; };
+		17C213AC19C4DDD900A0D30D /* Recipe View in Resources */ = {isa = PBXBuildFile; fileRef = 17C213AB19C4DDD900A0D30D /* Recipe View */; };
+		17C213AF19C4DFFE00A0D30D /* ListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213AE19C4DFFE00A0D30D /* ListTableView.m */; };
+		17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213B119C4E04900A0D30D /* RecipeViewController.m */; };
 		1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369239594A824C0E897C2FB4 /* libPods-MealKing.a */; };
 		605FE12819C4B61100504174 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FE12719C4B61100504174 /* Recipe.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +54,13 @@
 		17C2139A19C4C6AF00A0D30D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		17C2139B19C4C6AF00A0D30D /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
 		17C2139C19C4C6AF00A0D30D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		17C213A719C4DB3C00A0D30D /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		17C213A819C4DB3C00A0D30D /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		17C213AB19C4DDD900A0D30D /* Recipe View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Recipe View"; sourceTree = "<group>"; };
+		17C213AD19C4DFFE00A0D30D /* ListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableView.h; sourceTree = "<group>"; };
+		17C213AE19C4DFFE00A0D30D /* ListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableView.m; sourceTree = "<group>"; };
+		17C213B019C4E04900A0D30D /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		17C213B119C4E04900A0D30D /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 		369239594A824C0E897C2FB4 /* libPods-MealKing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MealKing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605FE12619C4B61100504174 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Objects/Recipe.h; sourceTree = "<group>"; };
 		605FE12719C4B61100504174 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Objects/Recipe.m; sourceTree = "<group>"; };
@@ -100,9 +111,11 @@
 			children = (
 				17C213A319C4DA7000A0D30D /* Executives */,
 				605FE12519C4B5C100504174 /* Objects */,
+				17C213AA19C4DB4B00A0D30D /* Controllers */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
 				1729D83219C4AB6F00585407 /* Images.xcassets */,
-				17C213A219C4C6B500A0D30D /* icons */,
+				17C213B319C4E18A00A0D30D /* junk */,
+				17C213A219C4C6B500A0D30D /* images */,
 				1729D82519C4AB6F00585407 /* Supporting Files */,
 			);
 			path = MealKing;
@@ -134,16 +147,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		17C213A219C4C6B500A0D30D /* icons */ = {
+		17C213A219C4C6B500A0D30D /* images */ = {
 			isa = PBXGroup;
 			children = (
-				17C2139819C4C6AF00A0D30D /* lists.png */,
-				17C2139919C4C6AF00A0D30D /* mealking.png */,
-				17C2139A19C4C6AF00A0D30D /* profile.png */,
-				17C2139B19C4C6AF00A0D30D /* recipes.png */,
-				17C2139C19C4C6AF00A0D30D /* settings.png */,
+				17C213AB19C4DDD900A0D30D /* Recipe View */,
+				17C213B419C4E1A400A0D30D /* nav bar */,
 			);
-			name = icons;
+			name = images;
 			sourceTree = "<group>";
 		};
 		17C213A319C4DA7000A0D30D /* Executives */ = {
@@ -155,6 +165,38 @@
 				1729D82D19C4AB6F00585407 /* ViewController.m */,
 			);
 			name = Executives;
+			sourceTree = "<group>";
+		};
+		17C213AA19C4DB4B00A0D30D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				17C213B019C4E04900A0D30D /* RecipeViewController.h */,
+				17C213B119C4E04900A0D30D /* RecipeViewController.m */,
+				17C213AD19C4DFFE00A0D30D /* ListTableView.h */,
+				17C213AE19C4DFFE00A0D30D /* ListTableView.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		17C213B319C4E18A00A0D30D /* junk */ = {
+			isa = PBXGroup;
+			children = (
+				17C213A719C4DB3C00A0D30D /* ListTableViewController.h */,
+				17C213A819C4DB3C00A0D30D /* ListTableViewController.m */,
+			);
+			name = junk;
+			sourceTree = "<group>";
+		};
+		17C213B419C4E1A400A0D30D /* nav bar */ = {
+			isa = PBXGroup;
+			children = (
+				17C2139819C4C6AF00A0D30D /* lists.png */,
+				17C2139919C4C6AF00A0D30D /* mealking.png */,
+				17C2139A19C4C6AF00A0D30D /* profile.png */,
+				17C2139B19C4C6AF00A0D30D /* recipes.png */,
+				17C2139C19C4C6AF00A0D30D /* settings.png */,
+			);
+			name = "nav bar";
 			sourceTree = "<group>";
 		};
 		605FE12519C4B5C100504174 /* Objects */ = {
@@ -262,6 +304,7 @@
 				1729D83319C4AB6F00585407 /* Images.xcassets in Resources */,
 				17C2139D19C4C6AF00A0D30D /* lists.png in Resources */,
 				17C2139F19C4C6AF00A0D30D /* profile.png in Resources */,
+				17C213AC19C4DDD900A0D30D /* Recipe View in Resources */,
 				17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,7 +359,10 @@
 				1729D82E19C4AB6F00585407 /* ViewController.m in Sources */,
 				1729D82B19C4AB6F00585407 /* AppDelegate.m in Sources */,
 				1729D82819C4AB6F00585407 /* main.m in Sources */,
+				17C213AF19C4DFFE00A0D30D /* ListTableView.m in Sources */,
 				605FE12819C4B61100504174 /* Recipe.m in Sources */,
+				17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */,
+				17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +513,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MealKingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealKing.app/MealKing";
@@ -482,6 +529,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = MealKingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MealKing.app/MealKing";
