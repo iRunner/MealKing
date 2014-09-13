@@ -13,6 +13,11 @@
 		1729D83119C4AB6F00585407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1729D82F19C4AB6F00585407 /* Main.storyboard */; };
 		1729D83319C4AB6F00585407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1729D83219C4AB6F00585407 /* Images.xcassets */; };
 		1729D83F19C4AB6F00585407 /* MealKingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729D83E19C4AB6F00585407 /* MealKingTests.m */; };
+		17C2139D19C4C6AF00A0D30D /* lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139819C4C6AF00A0D30D /* lists.png */; };
+		17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139919C4C6AF00A0D30D /* mealking.png */; };
+		17C2139F19C4C6AF00A0D30D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139A19C4C6AF00A0D30D /* profile.png */; };
+		17C213A019C4C6AF00A0D30D /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139B19C4C6AF00A0D30D /* recipes.png */; };
+		17C213A119C4C6AF00A0D30D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139C19C4C6AF00A0D30D /* settings.png */; };
 		1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369239594A824C0E897C2FB4 /* libPods-MealKing.a */; };
 		605FE12819C4B61100504174 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FE12719C4B61100504174 /* Recipe.m */; };
 /* End PBXBuildFile section */
@@ -40,6 +45,11 @@
 		1729D83819C4AB6F00585407 /* MealKingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealKingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1729D83D19C4AB6F00585407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1729D83E19C4AB6F00585407 /* MealKingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealKingTests.m; sourceTree = "<group>"; };
+		17C2139819C4C6AF00A0D30D /* lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lists.png; sourceTree = "<group>"; };
+		17C2139919C4C6AF00A0D30D /* mealking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealking.png; sourceTree = "<group>"; };
+		17C2139A19C4C6AF00A0D30D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		17C2139B19C4C6AF00A0D30D /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
+		17C2139C19C4C6AF00A0D30D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		369239594A824C0E897C2FB4 /* libPods-MealKing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MealKing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605FE12619C4B61100504174 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Objects/Recipe.h; sourceTree = "<group>"; };
 		605FE12719C4B61100504174 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Objects/Recipe.m; sourceTree = "<group>"; };
@@ -95,6 +105,7 @@
 				1729D82D19C4AB6F00585407 /* ViewController.m */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
 				1729D83219C4AB6F00585407 /* Images.xcassets */,
+				17C213A219C4C6B500A0D30D /* icons */,
 				1729D82519C4AB6F00585407 /* Supporting Files */,
 			);
 			path = MealKing;
@@ -124,6 +135,18 @@
 				1729D83D19C4AB6F00585407 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17C213A219C4C6B500A0D30D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				17C2139819C4C6AF00A0D30D /* lists.png */,
+				17C2139919C4C6AF00A0D30D /* mealking.png */,
+				17C2139A19C4C6AF00A0D30D /* profile.png */,
+				17C2139B19C4C6AF00A0D30D /* recipes.png */,
+				17C2139C19C4C6AF00A0D30D /* settings.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 		605FE12519C4B5C100504174 /* Objects */ = {
@@ -226,7 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1729D83119C4AB6F00585407 /* Main.storyboard in Resources */,
+				17C213A119C4C6AF00A0D30D /* settings.png in Resources */,
+				17C213A019C4C6AF00A0D30D /* recipes.png in Resources */,
 				1729D83319C4AB6F00585407 /* Images.xcassets in Resources */,
+				17C2139D19C4C6AF00A0D30D /* lists.png in Resources */,
+				17C2139F19C4C6AF00A0D30D /* profile.png in Resources */,
+				17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

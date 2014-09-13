@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="sdF-pb-Xu4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="COW-sE-3ov">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,6 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view appearanceType="aqua" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dyf-an-Ate" userLabel="navBar">
+                                <rect key="frame" x="0.0" y="0.0" width="61" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-fc-wso" userLabel="recipesButton">
+                                        <rect key="frame" x="3" y="303" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="OnN-ul-bjB"/>
+                                            <constraint firstAttribute="height" constant="40" id="XYE-oI-QMh"/>
+                                        </constraints>
+                                        <state key="normal" image="recipes.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-6x-Noc">
+                                        <rect key="frame" x="3" y="364" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pwm-8l-Lx0"/>
+                                        </constraints>
+                                        <state key="normal" image="lists.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUC-HK-b0t">
+                                        <rect key="frame" x="3" y="425" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fLg-Cq-S6l"/>
+                                        </constraints>
+                                        <state key="normal" image="profile.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="bUC-HK-b0t" firstAttribute="centerX" secondItem="Dyf-an-Ate" secondAttribute="centerX" id="FVP-Gf-6v5"/>
+                                    <constraint firstItem="Tfb-6x-Noc" firstAttribute="leading" secondItem="bUC-HK-b0t" secondAttribute="leading" id="Hxd-nz-gNE"/>
+                                    <constraint firstItem="vGA-fc-wso" firstAttribute="top" secondItem="Dyf-an-Ate" secondAttribute="top" constant="303" id="KAr-MA-gMm"/>
+                                    <constraint firstItem="vGA-fc-wso" firstAttribute="leading" secondItem="Tfb-6x-Noc" secondAttribute="leading" id="MSl-aG-4up"/>
+                                    <constraint firstItem="bUC-HK-b0t" firstAttribute="trailing" secondItem="Tfb-6x-Noc" secondAttribute="trailing" id="Ssu-MW-qqf"/>
+                                    <constraint firstItem="vGA-fc-wso" firstAttribute="trailing" secondItem="Tfb-6x-Noc" secondAttribute="trailing" id="T4h-n0-wF1"/>
+                                    <constraint firstItem="bUC-HK-b0t" firstAttribute="top" secondItem="Tfb-6x-Noc" secondAttribute="bottom" constant="21" id="Xuw-nh-CPd"/>
+                                    <constraint firstItem="Tfb-6x-Noc" firstAttribute="top" secondItem="vGA-fc-wso" secondAttribute="bottom" constant="21" id="eKC-vo-TuO"/>
+                                    <constraint firstItem="Tfb-6x-Noc" firstAttribute="centerY" secondItem="Dyf-an-Ate" secondAttribute="centerY" id="ed1-Ny-n9R"/>
+                                    <constraint firstItem="vGA-fc-wso" firstAttribute="leading" secondItem="Dyf-an-Ate" secondAttribute="leading" constant="3" id="lL1-ks-w9R"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jaw-yQ-xcE">
                                 <rect key="frame" x="64" y="0.0" width="960" height="390"/>
                             </imageView>
@@ -27,16 +77,11 @@
                                 <rect key="frame" x="384" y="391" width="320" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7nn-QM-S1Z">
-                                <rect key="frame" x="704" y="391" width="320" height="377"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gu-Vs-WE4">
-                                <rect key="frame" x="0.0" y="0.0" width="1133" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="AB6-e9-SxF"/>
-                                </items>
-                            </navigationBar>
+                            <view appearanceType="aqua" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giv-rO-mk4">
+                                <rect key="frame" x="704" y="391" width="320" height="384"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -47,53 +92,167 @@
             </objects>
             <point key="canvasLocation" x="1110" y="-103"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="Z5e-fQ-Juc">
+        <!--View Controller-->
+        <scene sceneID="Ud7-XH-MQy">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="sdF-pb-Xu4" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="jEm-pl-f3H">
+                <viewController id="rUO-lY-CvZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MvS-rV-cKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="14E-Kk-geF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xp6-7g-Ykp">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view appearanceType="aqua" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-4K-sfg" userLabel="navBar">
+                                <rect key="frame" x="0.0" y="0.0" width="61" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-3T-gZ9" userLabel="recipesButton">
+                                        <rect key="frame" x="3" y="303" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="UoZ-47-9M2"/>
+                                            <constraint firstAttribute="width" constant="55" id="x33-25-Q9S"/>
+                                        </constraints>
+                                        <state key="normal" image="recipes.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc8-8R-9yE">
+                                        <rect key="frame" x="3" y="364" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Q4i-Uw-eRN"/>
+                                        </constraints>
+                                        <state key="normal" image="lists.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-Nt-d6S">
+                                        <rect key="frame" x="3" y="425" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="vfx-jP-YJ1"/>
+                                        </constraints>
+                                        <state key="normal" image="profile.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fK5-Nt-d6S" firstAttribute="trailing" secondItem="tc8-8R-9yE" secondAttribute="trailing" id="0Qh-Af-YiZ"/>
+                                    <constraint firstItem="VIX-3T-gZ9" firstAttribute="leading" secondItem="tc8-8R-9yE" secondAttribute="leading" id="3M8-Gg-hJM"/>
+                                    <constraint firstItem="tc8-8R-9yE" firstAttribute="leading" secondItem="fK5-Nt-d6S" secondAttribute="leading" id="8DC-Dt-4ac"/>
+                                    <constraint firstItem="tc8-8R-9yE" firstAttribute="centerY" secondItem="Qy7-4K-sfg" secondAttribute="centerY" id="Dx2-PP-9Dc"/>
+                                    <constraint firstItem="VIX-3T-gZ9" firstAttribute="top" secondItem="Qy7-4K-sfg" secondAttribute="top" constant="303" id="Sw7-SO-Mx9"/>
+                                    <constraint firstItem="tc8-8R-9yE" firstAttribute="top" secondItem="VIX-3T-gZ9" secondAttribute="bottom" constant="21" id="W25-xj-bl8"/>
+                                    <constraint firstItem="VIX-3T-gZ9" firstAttribute="trailing" secondItem="tc8-8R-9yE" secondAttribute="trailing" id="eds-nR-u5s"/>
+                                    <constraint firstItem="VIX-3T-gZ9" firstAttribute="leading" secondItem="Qy7-4K-sfg" secondAttribute="leading" constant="3" id="jr8-pw-u3k"/>
+                                    <constraint firstItem="fK5-Nt-d6S" firstAttribute="top" secondItem="tc8-8R-9yE" secondAttribute="bottom" constant="21" id="knv-JU-yoa"/>
+                                    <constraint firstItem="fK5-Nt-d6S" firstAttribute="centerX" secondItem="Qy7-4K-sfg" secondAttribute="centerX" id="wsd-qW-fC1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ebX-Cv-QS6">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="qFL-6F-7gk">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="sdF-pb-Xu4" id="KC1-EU-mTF"/>
-                            <outlet property="delegate" destination="sdF-pb-Xu4" id="GTI-Sw-GzZ"/>
-                        </connections>
-                    </collectionView>
+                    </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PAC-Y4-5Id" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNU-Ys-Ajb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="-103"/>
+            <point key="canvasLocation" x="2295" y="-103"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="QUY-UA-r1T">
+        <!--View Controller-->
+        <scene sceneID="vhB-Gc-H7j">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="vFS-zj-vxy" sceneMemberID="viewController">
+                <viewController id="COW-sE-3ov" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Cr-0s-D9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="8zy-Gk-XIa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZZO-T8-V0b">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yin-6d-ixR">
+                                <rect key="frame" x="69" y="0.0" width="955" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vqb-zU-1Pa">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view appearanceType="aqua" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2o-ia-Z2B" userLabel="navBar">
+                                <rect key="frame" x="0.0" y="0.0" width="61" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-CR-YGf" userLabel="recipesButton">
+                                        <rect key="frame" x="3" y="303" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="0iX-BN-ASe"/>
+                                            <constraint firstAttribute="height" constant="40" id="dLg-2f-S7W"/>
+                                        </constraints>
+                                        <state key="normal" image="recipes.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beH-Te-ivK">
+                                        <rect key="frame" x="3" y="364" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2C0-1x-Yd7"/>
+                                        </constraints>
+                                        <state key="normal" image="lists.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drz-A9-fdT">
+                                        <rect key="frame" x="3" y="425" width="55" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="e7r-n0-fkl"/>
+                                        </constraints>
+                                        <state key="normal" image="profile.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="0CM-CR-YGf" firstAttribute="trailing" secondItem="beH-Te-ivK" secondAttribute="trailing" id="0MT-Qg-P3M"/>
+                                    <constraint firstItem="beH-Te-ivK" firstAttribute="top" secondItem="0CM-CR-YGf" secondAttribute="bottom" constant="21" id="0xJ-uS-GBZ"/>
+                                    <constraint firstItem="0CM-CR-YGf" firstAttribute="top" secondItem="s2o-ia-Z2B" secondAttribute="top" constant="303" id="2Yf-nk-eaO"/>
+                                    <constraint firstItem="beH-Te-ivK" firstAttribute="centerY" secondItem="s2o-ia-Z2B" secondAttribute="centerY" id="MfC-QF-cfM"/>
+                                    <constraint firstItem="beH-Te-ivK" firstAttribute="leading" secondItem="Drz-A9-fdT" secondAttribute="leading" id="ZCI-F0-kSw"/>
+                                    <constraint firstItem="0CM-CR-YGf" firstAttribute="leading" secondItem="s2o-ia-Z2B" secondAttribute="leading" constant="3" id="fNa-Hp-clM"/>
+                                    <constraint firstItem="Drz-A9-fdT" firstAttribute="top" secondItem="beH-Te-ivK" secondAttribute="bottom" constant="21" id="gSR-5z-gqR"/>
+                                    <constraint firstItem="0CM-CR-YGf" firstAttribute="leading" secondItem="beH-Te-ivK" secondAttribute="leading" id="gxh-mf-m34"/>
+                                    <constraint firstItem="Drz-A9-fdT" firstAttribute="trailing" secondItem="beH-Te-ivK" secondAttribute="trailing" id="iFf-YL-szv"/>
+                                    <constraint firstItem="Drz-A9-fdT" firstAttribute="centerX" secondItem="s2o-ia-Z2B" secondAttribute="centerX" id="w7y-rr-2qs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RrZ-j5-w4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noy-eW-5Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2248" y="-103"/>
+            <point key="canvasLocation" x="-91" y="-90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lists.png" width="110" height="69"/>
+        <image name="profile.png" width="110" height="77"/>
+        <image name="recipes.png" width="110" height="79"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
