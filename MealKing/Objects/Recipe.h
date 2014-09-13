@@ -11,7 +11,7 @@
 @interface Recipe : NSObject
 
 @property NSString *Name;
-@property 
+
 
 
 @end
