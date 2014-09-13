@@ -98,11 +98,8 @@
 		1729D82419C4AB6F00585407 /* MealKing */ = {
 			isa = PBXGroup;
 			children = (
+				17C213A319C4DA7000A0D30D /* Executives */,
 				605FE12519C4B5C100504174 /* Objects */,
-				1729D82919C4AB6F00585407 /* AppDelegate.h */,
-				1729D82A19C4AB6F00585407 /* AppDelegate.m */,
-				1729D82C19C4AB6F00585407 /* ViewController.h */,
-				1729D82D19C4AB6F00585407 /* ViewController.m */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
 				1729D83219C4AB6F00585407 /* Images.xcassets */,
 				17C213A219C4C6B500A0D30D /* icons */,
@@ -147,6 +144,17 @@
 				17C2139C19C4C6AF00A0D30D /* settings.png */,
 			);
 			name = icons;
+			sourceTree = "<group>";
+		};
+		17C213A319C4DA7000A0D30D /* Executives */ = {
+			isa = PBXGroup;
+			children = (
+				1729D82919C4AB6F00585407 /* AppDelegate.h */,
+				1729D82A19C4AB6F00585407 /* AppDelegate.m */,
+				1729D82C19C4AB6F00585407 /* ViewController.h */,
+				1729D82D19C4AB6F00585407 /* ViewController.m */,
+			);
+			name = Executives;
 			sourceTree = "<group>";
 		};
 		605FE12519C4B5C100504174 /* Objects */ = {
