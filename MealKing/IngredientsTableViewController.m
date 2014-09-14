@@ -11,6 +11,10 @@
 
 @interface IngredientsTableViewController ()
 
+@property (nonatomic, strong) NSArray *ingredients;
+@property (nonatomic, strong) NSArray *amount;
+@property (nonatomic, strong) NSArray *pictures;
+
 @end
 
 @implementation IngredientsTableViewController
@@ -20,7 +24,9 @@
     
     self.view.backgroundColor = [UIColor clearColor];
 
-    
+    self.ingredients = @[@"Spaghetti", @"Ground Beef", @"Salt", @"White Sugar", @"Oregano", @"Black Pepper", @"Garlic Powder", @"Onions", @"Tomatoes"];
+    self.amount = @[@"12 Onces", @"1 Pound", @"1 Teaspoon", @"3/4 Teaspoon", @"1 Teaspoon", @"1/4 Teaspoons", @"1/8 Teaspoons", @"2 Tablespoons", @"2 1/2 Cups"];
+    self.pictures = @[@"spaghetti_.png", @"groundbeef.png", @"salt.png", @"whitesugar.png", @"oregano",@"blackpepper.png", @"garlicpowder.png", @"onions", @"tomatoes.png"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -43,7 +49,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 5;
+    return [self.ingredients count];
 }
 
 
@@ -55,6 +61,10 @@
     //[[cell contentView] setBackgroundColor:[UIColor clearColor]];
     //[[cell backgroundView] setBackgroundColor:[UIColor clearColor]];
     [cell setBackgroundColor:[UIColor clearColor]];
+    
+    cell.name.text = [self.ingredients objectAtIndex:indexPath.row];
+    cell.amount.text = [self.amount objectAtIndex:indexPath.row];
+    cell.picture.image = [UIImage imageNamed:[self.pictures objectAtIndex:indexPath.row]];
     
     return cell;
 }

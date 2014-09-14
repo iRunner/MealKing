@@ -71,7 +71,7 @@
     
     index++;
     
-    if (index == 8) {
+    if (index == 10) {
         return nil;
     }
     

@@ -11,6 +11,8 @@
 
 @interface StepsTableViewController ()
 
+@property (nonatomic, strong) NSArray *steps;
+
 @end
 
 @implementation StepsTableViewController
@@ -19,6 +21,9 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor clearColor];
+    
+    self.steps = @[@"Turn on buner to medium heat", @"Place skillet onto burner", @"Place beef into skillet", @"Cook beef until it's brown", @"Place large pot onto burner", @"Mince onions", @"Chips tomatoes"];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -42,7 +47,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the size of the array
-    return 5;
+    return [self.steps count];
 }
 
 
@@ -51,8 +56,8 @@
     
     // Configure the cell...
     [cell setBackgroundColor:[UIColor clearColor]];
-    
-    
+    cell.nameLabel.text = [self.steps objectAtIndex:indexPath.row];
+    cell.numberLabel.text = [NSString stringWithFormat:@"%li", indexPath.row + 1];
     
     return cell;
 }

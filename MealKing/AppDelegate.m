@@ -8,6 +8,10 @@
 //blah
 
 #import "AppDelegate.h"
+#import "AFNetworking.h"
+#import "Fetcher.h"
+
+
 
 @interface AppDelegate ()
 
@@ -19,6 +23,34 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     NSLog(@"hey");
+    
+    self.url = @"http://agile-thicket-5431.herokuapp.com/api/recpie";
+    Fetcher *feedFetcher = [[Fetcher alloc] init];
+    
+    self.things =[feedFetcher fetchFeedWith:self.url];
+    
+    while ([self.things isEqual:NULL])   {
+        
+    }
+    
+    NSLog(@"the array %@", self.things);
+    
+    
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    [manager GET:self.url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        NSLog(@"JSON: %@", responseObject);
+//        
+//        
+//         NSArray *allCourses = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+//        
+//        
+//       
+//        
+//        
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        NSLog(@"Error: %@", error);
+//    }];
     
     return YES;
 }
