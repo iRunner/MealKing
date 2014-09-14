@@ -28,6 +28,7 @@
     NSLog(@"hit the right VC");
     [super viewDidLoad];
     
+
     
     //set the tableView
     //[self.stepsList setBackgroundView:whiteBG];

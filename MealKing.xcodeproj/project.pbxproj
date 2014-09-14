@@ -34,7 +34,20 @@
 		17F37BA019C4EE160045EC9F /* ingredients_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B9619C4EE160045EC9F /* ingredients_active.png */; };
 		17F37BA119C4EE160045EC9F /* white_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B9719C4EE160045EC9F /* white_bg.png */; };
 		17F37BA219C4EE160045EC9F /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B9819C4EE160045EC9F /* x.png */; };
-		1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369239594A824C0E897C2FB4 /* libPods-MealKing.a */; };
+		17F37BAD19C507D30045EC9F /* lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BA519C507D30045EC9F /* lists.png */; };
+		17F37BAE19C507D30045EC9F /* lists_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BA619C507D30045EC9F /* lists_active.png */; };
+		17F37BAF19C507D30045EC9F /* mealking.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BA719C507D30045EC9F /* mealking.png */; };
+		17F37BB019C507D30045EC9F /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BA819C507D30045EC9F /* profile.png */; };
+		17F37BB119C507D30045EC9F /* profile_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BA919C507D30045EC9F /* profile_active.png */; };
+		17F37BB219C507D30045EC9F /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BAA19C507D30045EC9F /* recipes.png */; };
+		17F37BB319C507D30045EC9F /* recipes_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BAB19C507D30045EC9F /* recipes_active.png */; };
+		17F37BB419C507D30045EC9F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BAC19C507D30045EC9F /* settings.png */; };
+		17F37BB719C507EF0045EC9F /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BB619C507EF0045EC9F /* clock.png */; };
+		17F37BBD19C508420045EC9F /* bottombar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BB919C508420045EC9F /* bottombar_bg.png */; };
+		17F37BBE19C508420045EC9F /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBA19C508420045EC9F /* clock.png */; };
+		17F37BBF19C508420045EC9F /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBB19C508420045EC9F /* timer.png */; };
+		17F37BC019C508420045EC9F /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBC19C508420045EC9F /* topbar_bg.png */; };
+		1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369239594A824C0E897C2FB4 /* libPods-MealKing.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		605FE12819C4B61100504174 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FE12719C4B61100504174 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +98,19 @@
 		17F37B9619C4EE160045EC9F /* ingredients_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ingredients_active.png; sourceTree = "<group>"; };
 		17F37B9719C4EE160045EC9F /* white_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bg.png; sourceTree = "<group>"; };
 		17F37B9819C4EE160045EC9F /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		17F37BA519C507D30045EC9F /* lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lists.png; sourceTree = "<group>"; };
+		17F37BA619C507D30045EC9F /* lists_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lists_active.png; sourceTree = "<group>"; };
+		17F37BA719C507D30045EC9F /* mealking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealking.png; sourceTree = "<group>"; };
+		17F37BA819C507D30045EC9F /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		17F37BA919C507D30045EC9F /* profile_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_active.png; sourceTree = "<group>"; };
+		17F37BAA19C507D30045EC9F /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
+		17F37BAB19C507D30045EC9F /* recipes_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes_active.png; sourceTree = "<group>"; };
+		17F37BAC19C507D30045EC9F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		17F37BB619C507EF0045EC9F /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		17F37BB919C508420045EC9F /* bottombar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottombar_bg.png; sourceTree = "<group>"; };
+		17F37BBA19C508420045EC9F /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		17F37BBB19C508420045EC9F /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
+		17F37BBC19C508420045EC9F /* topbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_bg.png; sourceTree = "<group>"; };
 		369239594A824C0E897C2FB4 /* libPods-MealKing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MealKing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605FE12619C4B61100504174 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Objects/Recipe.h; sourceTree = "<group>"; };
 		605FE12719C4B61100504174 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Objects/Recipe.m; sourceTree = "<group>"; };
@@ -175,6 +201,9 @@
 		17C213A219C4C6B500A0D30D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				17F37BB819C508420045EC9F /* Instructions */,
+				17F37BB519C507EF0045EC9F /* Recipe Feed */,
+				17F37BA419C507D30045EC9F /* Nav Bar */,
 				17F37B8E19C4EE160045EC9F /* Recipe View */,
 				17C213B419C4E1A400A0D30D /* nav bar */,
 			);
@@ -251,6 +280,40 @@
 			name = fonts;
 			sourceTree = "<group>";
 		};
+		17F37BA419C507D30045EC9F /* Nav Bar */ = {
+			isa = PBXGroup;
+			children = (
+				17F37BA519C507D30045EC9F /* lists.png */,
+				17F37BA619C507D30045EC9F /* lists_active.png */,
+				17F37BA719C507D30045EC9F /* mealking.png */,
+				17F37BA819C507D30045EC9F /* profile.png */,
+				17F37BA919C507D30045EC9F /* profile_active.png */,
+				17F37BAA19C507D30045EC9F /* recipes.png */,
+				17F37BAB19C507D30045EC9F /* recipes_active.png */,
+				17F37BAC19C507D30045EC9F /* settings.png */,
+			);
+			path = "Nav Bar";
+			sourceTree = "<group>";
+		};
+		17F37BB519C507EF0045EC9F /* Recipe Feed */ = {
+			isa = PBXGroup;
+			children = (
+				17F37BB619C507EF0045EC9F /* clock.png */,
+			);
+			path = "Recipe Feed";
+			sourceTree = "<group>";
+		};
+		17F37BB819C508420045EC9F /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				17F37BB919C508420045EC9F /* bottombar_bg.png */,
+				17F37BBA19C508420045EC9F /* clock.png */,
+				17F37BBB19C508420045EC9F /* timer.png */,
+				17F37BBC19C508420045EC9F /* topbar_bg.png */,
+			);
+			path = Instructions;
+			sourceTree = "<group>";
+		};
 		605FE12519C4B5C100504174 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +382,7 @@
 				TargetAttributes = {
 					1729D82119C4AB6F00585407 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = NLDBE97VBG;
 					};
 					1729D83719C4AB6F00585407 = {
 						CreatedOnToolsVersion = 6.0;
@@ -355,21 +419,34 @@
 				17F37B9A19C4EE160045EC9F /* clock.png in Resources */,
 				1729D83119C4AB6F00585407 /* Main.storyboard in Resources */,
 				17C213A119C4C6AF00A0D30D /* settings.png in Resources */,
+				17F37BAD19C507D30045EC9F /* lists.png in Resources */,
 				17F37BA119C4EE160045EC9F /* white_bg.png in Resources */,
+				17F37BB019C507D30045EC9F /* profile.png in Resources */,
+				17F37BB419C507D30045EC9F /* settings.png in Resources */,
 				17F37B9C19C4EE160045EC9F /* favorite.png in Resources */,
 				17C213A019C4C6AF00A0D30D /* recipes.png in Resources */,
 				1729D83319C4AB6F00585407 /* Images.xcassets in Resources */,
 				17F37B9919C4EE160045EC9F /* burninghouse.png in Resources */,
 				17C2139D19C4C6AF00A0D30D /* lists.png in Resources */,
 				17C2139F19C4C6AF00A0D30D /* profile.png in Resources */,
+				17F37BAE19C507D30045EC9F /* lists_active.png in Resources */,
 				17F37BA219C4EE160045EC9F /* x.png in Resources */,
 				17F37B8B19C4E9900045EC9F /* DinBold.TTF in Resources */,
+				17F37BC019C508420045EC9F /* topbar_bg.png in Resources */,
+				17F37BB719C507EF0045EC9F /* clock.png in Resources */,
+				17F37BBD19C508420045EC9F /* bottombar_bg.png in Resources */,
 				17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */,
 				17F37B8C19C4E9900045EC9F /* DinLight.TTF in Resources */,
+				17F37BB219C507D30045EC9F /* recipes.png in Resources */,
+				17F37BB119C507D30045EC9F /* profile_active.png in Resources */,
+				17F37BAF19C507D30045EC9F /* mealking.png in Resources */,
+				17F37BBE19C508420045EC9F /* clock.png in Resources */,
 				17F37BA019C4EE160045EC9F /* ingredients_active.png in Resources */,
 				17F37B9E19C4EE160045EC9F /* grey_bg.png in Resources */,
 				17F37B9B19C4EE160045EC9F /* comment.png in Resources */,
+				17F37BBF19C508420045EC9F /* timer.png in Resources */,
 				17F37B8D19C4E9900045EC9F /* Neutraface.otf in Resources */,
+				17F37BB319C507D30045EC9F /* recipes_active.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,10 +621,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MealKing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -557,10 +637,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MealKing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

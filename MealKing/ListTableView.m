@@ -14,13 +14,25 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-        NSLog(@"bg");
-        UIImageView *whiteBG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"white_bg.png"]];
-        [self setBackgroundView:whiteBG];
 
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self changeBackground];
+    }
+    return self;
+}
+
+- (void)changeBackground {
+
+    UIImageView *whiteBG = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"white_bg.png"]];
+    self.backgroundColor = [UIColor clearColor];
+    //[self setBackgroundView:whiteBG];
 }
 
 /*
