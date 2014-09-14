@@ -42,6 +42,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tryThis:(id)sender {
+    //self addChildViewController:<#(UIViewController *)#>
+}
+
+
 //recipes //list //profile (buttons)
 - (IBAction)recipeButton:(id)sender {
     
