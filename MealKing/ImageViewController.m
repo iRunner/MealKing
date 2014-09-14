@@ -21,7 +21,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    self.image.image = [UIImage imageNamed:[NSString stringWithFormat:@"mk_step%li.png", (long)self.indexNumber]];
+    self.image.image = [UIImage imageNamed:[NSString stringWithFormat:@"step_%li.png", (long)self.indexNumber]];
 }
 
 - (void)didReceiveMemoryWarning {

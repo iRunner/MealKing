@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rUO-lY-CvZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -12,8 +12,10 @@
             <string>DIN-Bold</string>
             <string>DIN-Bold</string>
             <string>DIN-Bold</string>
+            <string>DIN-Bold</string>
         </mutableArray>
         <mutableArray key="DinLight.TTF">
+            <string>DIN-Light</string>
             <string>DIN-Light</string>
             <string>DIN-Light</string>
             <string>DIN-Light</string>
@@ -114,6 +116,7 @@
                                         </state>
                                         <connections>
                                             <action selector="tryThis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21q-Bx-ua6"/>
+                                            <segue destination="rUO-lY-CvZ" kind="modal" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="k7X-RG-ROG"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="ATS-aR-Scg">
@@ -299,7 +302,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-4K-sfg" userLabel="navBar">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-4K-sfg" userLabel="sideBar">
                                 <rect key="frame" x="0.0" y="0.0" width="60" height="768"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-3T-gZ9" userLabel="recipesButton">
@@ -308,7 +311,7 @@
                                             <constraint firstAttribute="height" constant="40" id="UoZ-47-9M2"/>
                                             <constraint firstAttribute="width" constant="55" id="x33-25-Q9S"/>
                                         </constraints>
-                                        <state key="normal" image="recipes.png">
+                                        <state key="normal" image="recipes_active.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -330,8 +333,8 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l17-mO-fC0">
-                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mealking.png" translatesAutoresizingMaskIntoConstraints="NO" id="l17-mO-fC0">
+                                        <rect key="frame" x="2" y="22" width="60" height="50"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -348,8 +351,8 @@
                                     <constraint firstItem="fK5-Nt-d6S" firstAttribute="centerX" secondItem="Qy7-4K-sfg" secondAttribute="centerX" id="wsd-qW-fC1"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-jq-tXO">
-                                <rect key="frame" x="68" y="20" width="956" height="60"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-jq-tXO" userLabel="top">
+                                <rect key="frame" x="68" y="23" width="956" height="63"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topbar_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-DX-es0">
                                         <rect key="frame" x="0.0" y="0.0" width="956" height="60"/>
@@ -360,24 +363,48 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0Q-5D-f5f">
-                                        <rect key="frame" x="902" y="5" width="50" height="50"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6za-Ms-tgg">
-                                        <rect key="frame" x="834" y="5" width="50" height="50"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKH-Nz-iqy">
+                                        <rect key="frame" x="867" y="-30" width="120" height="120"/>
+                                        <state key="normal" image="burninghouse1.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timer.png" translatesAutoresizingMaskIntoConstraints="NO" id="VGI-7x-PgH">
-                                        <rect key="frame" x="766" y="5" width="40" height="45"/>
+                                        <rect key="frame" x="841" y="11" width="33" height="37"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-E8-SFT">
-                                <rect key="frame" x="68" y="83" width="956" height="627"/>
+                                <rect key="frame" x="68" y="83" width="956" height="685"/>
                                 <connections>
                                     <segue destination="54a-Fp-F7d" kind="embed" id="T6g-U3-pGP"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dm9-q3-sFb" userLabel="bottom">
+                                <rect key="frame" x="68" y="710" width="956" height="58"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottombar_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="UPj-rY-rVc">
+                                        <rect key="frame" x="0.0" y="0.0" width="956" height="58"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8W-Cq-I2D">
+                                        <rect key="frame" x="57" y="17" width="76" height="24"/>
+                                        <fontDescription key="fontDescription" name="DIN-Bold" family="DIN-Bold" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-uQ-AGe">
+                                        <rect key="frame" x="13" y="12" width="33" height="33"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1    2    3    4    5    6    7    8    9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxI-z7-Q5F">
+                                        <rect key="frame" x="141" y="10" width="675" height="38"/>
+                                        <fontDescription key="fontDescription" name="DIN-Light" family="DIN-Light" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -400,7 +427,7 @@
                         <viewControllerLayoutGuide type="bottom" id="7gv-Ti-faP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Pk-vA-CVt">
-                        <rect key="frame" x="0.0" y="0.0" width="956" height="627"/>
+                        <rect key="frame" x="0.0" y="0.0" width="956" height="685"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -421,13 +448,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="9io-2Z-ndz">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="step_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="9io-2Z-ndz">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="686"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iPad #n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vek-eE-OPN">
-                                <rect key="frame" x="381" y="350" width="262" height="109"/>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="52"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiw-kL-h72">
+                                <rect key="frame" x="81" y="519" width="905" height="109"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lj4-pj-pgP">
+                                <rect key="frame" x="6" y="546" width="84" height="56"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="40"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -435,8 +468,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="descriptionLabel" destination="Tiw-kL-h72" id="qxt-uR-x26"/>
                         <outlet property="image" destination="9io-2Z-ndz" id="zl4-VY-zcR"/>
-                        <outlet property="label" destination="Vek-eE-OPN" id="sO5-jw-UYV"/>
+                        <outlet property="number" destination="lj4-pj-pgP" id="EqZ-SQ-ryB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yhW-cC-3eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -530,16 +564,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="burninghouse.png" width="106" height="107"/>
+        <image name="bottombar_bg.png" width="1938" height="120"/>
+        <image name="burninghouse.png" width="120" height="120"/>
+        <image name="burninghouse1.png" width="60" height="60"/>
+        <image name="clock.png" width="46" height="46"/>
         <image name="comment.png" width="98" height="93"/>
         <image name="favorite.png" width="98" height="93"/>
         <image name="grey_bg.png" width="646" height="776"/>
         <image name="lists.png" width="110" height="69"/>
+        <image name="mealking.png" width="110" height="90"/>
         <image name="profile.png" width="110" height="77"/>
         <image name="recipes.png" width="110" height="79"/>
         <image name="recipes_active.png" width="110" height="79"/>
         <image name="spaghetti_.png" width="88" height="88"/>
         <image name="spaghetti_cover.png" width="1938" height="719"/>
+        <image name="step_0.png" width="1938" height="1256"/>
         <image name="timer.png" width="60" height="72"/>
         <image name="topbar_bg.png" width="1938" height="120"/>
         <image name="white_bg.png" width="646" height="776"/>

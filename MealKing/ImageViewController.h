@@ -10,8 +10,10 @@
 
 @interface ImageViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *number;
+
 
 @property (assign, nonatomic) NSInteger indexNumber;
 
