@@ -11,7 +11,9 @@
 @implementation IngredientTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    //self.contentView.backgroundColor = [UIColor clearColor];
+    //self.backgroundView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -88,7 +88,7 @@
                                     <constraint firstItem="vGA-fc-wso" firstAttribute="leading" secondItem="Dyf-an-Ate" secondAttribute="leading" constant="3" id="lL1-ks-w9R"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jaw-yQ-xcE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spaghetti_cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jaw-yQ-xcE">
                                 <rect key="frame" x="64" y="0.0" width="960" height="390"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="kja-rA-rJe">
@@ -195,14 +195,17 @@
         <scene sceneID="LOS-u4-OKc">
             <objects>
                 <tableViewController id="7x4-ef-7Tl" customClass="IngredientsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="eeh-PR-j6Y">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eeh-PR-j6Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient" rowHeight="60" id="MHD-5t-Rcb" customClass="IngredientTableViewCell">
+                            <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient" rowHeight="60" id="MHD-5t-Rcb" customClass="IngredientTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHD-5t-Rcb" id="Kn4-Hr-vmu">
+                                <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHD-5t-Rcb" id="Kn4-Hr-vmu">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spaghetti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-MV-8Bm">
@@ -217,11 +220,15 @@
                                             <color key="textColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ir5-XS-9vL">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spaghetti_.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ir5-XS-9vL">
                                             <rect key="frame" x="20" y="7" width="45" height="45"/>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.92941176469999998" green="0.28363748556346519" blue="0.13469037008093879" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="amount" destination="0Nu-Dw-yFX" id="uNu-N8-nYe"/>
                                     <outlet property="name" destination="dXY-MV-8Bm" id="VJM-RO-szp"/>
@@ -445,6 +452,8 @@
         <image name="profile.png" width="110" height="77"/>
         <image name="recipes.png" width="110" height="79"/>
         <image name="recipes_active.png" width="110" height="79"/>
+        <image name="spaghetti_.png" width="88" height="88"/>
+        <image name="spaghetti_cover.png" width="1938" height="719"/>
         <image name="white_bg.png" width="645" height="776"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

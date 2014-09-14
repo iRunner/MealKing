@@ -7,6 +7,7 @@
 //
 
 #import "IngredientsTableViewController.h"
+#import "IngredientTableViewCell.h"
 
 @interface IngredientsTableViewController ()
 
@@ -35,25 +36,36 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return 5;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ingredient" forIndexPath:indexPath];
     
+    IngredientTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ingredient" forIndexPath:indexPath];
+    cell.amount.text = @"Spaghetti";
     
+    //[[cell contentView] setBackgroundColor:[UIColor clearColor]];
+    //[[cell backgroundView] setBackgroundColor:[UIColor clearColor]];
+    [cell setBackgroundColor:[UIColor clearColor]];
     
     return cell;
 }
+
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    cell.transform = CGAffineTransformMakeScale(0.3, 0.3);
+//    [UIView animateWithDuration:0.5 animations:^{
+//        cell.transform = CGAffineTransformIdentity;
+//    }];
+//}
 
 
 /*
