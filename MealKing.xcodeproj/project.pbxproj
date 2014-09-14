@@ -13,6 +13,18 @@
 		1729D83119C4AB6F00585407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1729D82F19C4AB6F00585407 /* Main.storyboard */; };
 		1729D83319C4AB6F00585407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1729D83219C4AB6F00585407 /* Images.xcassets */; };
 		1729D83F19C4AB6F00585407 /* MealKingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729D83E19C4AB6F00585407 /* MealKingTests.m */; };
+		17AF00BF19C579B900E802A6 /* FinalStepsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17AF00BE19C579B900E802A6 /* FinalStepsViewController.m */; };
+		17AF00F119C5840D00E802A6 /* mk_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00D519C5840D00E802A6 /* mk_splash.png */; };
+		17AF00F219C5840D00E802A6 /* mk_step0.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00D619C5840D00E802A6 /* mk_step0.png */; };
+		17AF00F319C5840D00E802A6 /* mk_step1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00D719C5840D00E802A6 /* mk_step1.png */; };
+		17AF00F419C5840D00E802A6 /* mk_step10.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00D819C5840D00E802A6 /* mk_step10.png */; };
+		17AF00F519C5840D00E802A6 /* mk_step2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00D919C5840D00E802A6 /* mk_step2.png */; };
+		17AF00F619C5840D00E802A6 /* mk_step3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DA19C5840D00E802A6 /* mk_step3.png */; };
+		17AF00F719C5840D00E802A6 /* mk_step4.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DB19C5840D00E802A6 /* mk_step4.png */; };
+		17AF00F819C5840D00E802A6 /* mk_step5.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DC19C5840D00E802A6 /* mk_step5.png */; };
+		17AF00F919C5840D00E802A6 /* mk_step7.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DD19C5840D00E802A6 /* mk_step7.png */; };
+		17AF00FA19C5840D00E802A6 /* mk_step8.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DE19C5840D00E802A6 /* mk_step8.png */; };
+		17AF00FB19C5840D00E802A6 /* mk_step9.png in Resources */ = {isa = PBXBuildFile; fileRef = 17AF00DF19C5840D00E802A6 /* mk_step9.png */; };
 		17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213A819C4DB3C00A0D30D /* ListTableViewController.m */; };
 		17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213B119C4E04900A0D30D /* RecipeViewController.m */; };
 		17E78E4619C52C08009B2B96 /* IngredientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E4519C52C08009B2B96 /* IngredientTableViewCell.m */; };
@@ -24,6 +36,9 @@
 		17E78E5B19C554F0009B2B96 /* white_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17E78E5919C554F0009B2B96 /* white_bg.png */; };
 		17E78E5C19C554F0009B2B96 /* grey_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17E78E5A19C554F0009B2B96 /* grey_bg.png */; };
 		17E78E5E19C55713009B2B96 /* noodles.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 17E78E5D19C55713009B2B96 /* noodles.jpg */; };
+		17E78E6119C562D2009B2B96 /* StepsPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E6019C562D2009B2B96 /* StepsPageViewController.m */; };
+		17E78EA219C57741009B2B96 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78EA119C57741009B2B96 /* ContainerViewController.m */; };
+		17E78EA519C57817009B2B96 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78EA419C57817009B2B96 /* ImageViewController.m */; };
 		17F37B8B19C4E9900045EC9F /* DinBold.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8819C4E9900045EC9F /* DinBold.TTF */; };
 		17F37B8C19C4E9900045EC9F /* DinLight.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8919C4E9900045EC9F /* DinLight.TTF */; };
 		17F37B8D19C4E9900045EC9F /* Neutraface.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8A19C4E9900045EC9F /* Neutraface.otf */; };
@@ -74,6 +89,19 @@
 		1729D83819C4AB6F00585407 /* MealKingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealKingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1729D83D19C4AB6F00585407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1729D83E19C4AB6F00585407 /* MealKingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealKingTests.m; sourceTree = "<group>"; };
+		17AF00BD19C579B900E802A6 /* FinalStepsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalStepsViewController.h; sourceTree = "<group>"; };
+		17AF00BE19C579B900E802A6 /* FinalStepsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalStepsViewController.m; sourceTree = "<group>"; };
+		17AF00D519C5840D00E802A6 /* mk_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_splash.png; sourceTree = "<group>"; };
+		17AF00D619C5840D00E802A6 /* mk_step0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step0.png; sourceTree = "<group>"; };
+		17AF00D719C5840D00E802A6 /* mk_step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step1.png; sourceTree = "<group>"; };
+		17AF00D819C5840D00E802A6 /* mk_step10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step10.png; sourceTree = "<group>"; };
+		17AF00D919C5840D00E802A6 /* mk_step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step2.png; sourceTree = "<group>"; };
+		17AF00DA19C5840D00E802A6 /* mk_step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step3.png; sourceTree = "<group>"; };
+		17AF00DB19C5840D00E802A6 /* mk_step4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step4.png; sourceTree = "<group>"; };
+		17AF00DC19C5840D00E802A6 /* mk_step5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step5.png; sourceTree = "<group>"; };
+		17AF00DD19C5840D00E802A6 /* mk_step7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step7.png; sourceTree = "<group>"; };
+		17AF00DE19C5840D00E802A6 /* mk_step8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step8.png; sourceTree = "<group>"; };
+		17AF00DF19C5840D00E802A6 /* mk_step9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_step9.png; sourceTree = "<group>"; };
 		17C213A719C4DB3C00A0D30D /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		17C213A819C4DB3C00A0D30D /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
 		17C213B019C4E04900A0D30D /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
@@ -91,6 +119,12 @@
 		17E78E5919C554F0009B2B96 /* white_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bg.png; sourceTree = "<group>"; };
 		17E78E5A19C554F0009B2B96 /* grey_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_bg.png; sourceTree = "<group>"; };
 		17E78E5D19C55713009B2B96 /* noodles.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodles.jpg; sourceTree = "<group>"; };
+		17E78E5F19C562D2009B2B96 /* StepsPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsPageViewController.h; sourceTree = "<group>"; };
+		17E78E6019C562D2009B2B96 /* StepsPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsPageViewController.m; sourceTree = "<group>"; };
+		17E78EA019C57741009B2B96 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		17E78EA119C57741009B2B96 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		17E78EA319C57817009B2B96 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		17E78EA419C57817009B2B96 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		17F37B8819C4E9900045EC9F /* DinBold.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DinBold.TTF; sourceTree = "<group>"; };
 		17F37B8919C4E9900045EC9F /* DinLight.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DinLight.TTF; sourceTree = "<group>"; };
 		17F37B8A19C4E9900045EC9F /* Neutraface.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neutraface.otf; sourceTree = "<group>"; };
@@ -157,7 +191,9 @@
 				605FE12519C4B5C100504174 /* Objects */,
 				17C213AA19C4DB4B00A0D30D /* Recipe View */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
+				17E78E6219C562DB009B2B96 /* Steps */,
 				1729D83219C4AB6F00585407 /* Images.xcassets */,
+				17AF00C219C5840D00E802A6 /* Mocks */,
 				17E78E5419C54788009B2B96 /* server */,
 				17F37BA319C4EE380045EC9F /* fonts */,
 				17C213A219C4C6B500A0D30D /* images */,
@@ -191,6 +227,24 @@
 				1729D83D19C4AB6F00585407 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17AF00C219C5840D00E802A6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				17AF00D519C5840D00E802A6 /* mk_splash.png */,
+				17AF00D619C5840D00E802A6 /* mk_step0.png */,
+				17AF00D719C5840D00E802A6 /* mk_step1.png */,
+				17AF00D819C5840D00E802A6 /* mk_step10.png */,
+				17AF00D919C5840D00E802A6 /* mk_step2.png */,
+				17AF00DA19C5840D00E802A6 /* mk_step3.png */,
+				17AF00DB19C5840D00E802A6 /* mk_step4.png */,
+				17AF00DC19C5840D00E802A6 /* mk_step5.png */,
+				17AF00DD19C5840D00E802A6 /* mk_step7.png */,
+				17AF00DE19C5840D00E802A6 /* mk_step8.png */,
+				17AF00DF19C5840D00E802A6 /* mk_step9.png */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		17C213A219C4C6B500A0D30D /* images */ = {
@@ -229,6 +283,8 @@
 		17C213B319C4E18A00A0D30D /* junk */ = {
 			isa = PBXGroup;
 			children = (
+				17E78E5F19C562D2009B2B96 /* StepsPageViewController.h */,
+				17E78E6019C562D2009B2B96 /* StepsPageViewController.m */,
 				17C213A719C4DB3C00A0D30D /* ListTableViewController.h */,
 				17C213A819C4DB3C00A0D30D /* ListTableViewController.m */,
 			);
@@ -265,6 +321,19 @@
 				17E78E5719C547E8009B2B96 /* spaghetti_.png */,
 			);
 			name = server;
+			sourceTree = "<group>";
+		};
+		17E78E6219C562DB009B2B96 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				17AF00BD19C579B900E802A6 /* FinalStepsViewController.h */,
+				17AF00BE19C579B900E802A6 /* FinalStepsViewController.m */,
+				17E78EA019C57741009B2B96 /* ContainerViewController.h */,
+				17E78EA119C57741009B2B96 /* ContainerViewController.m */,
+				17E78EA319C57817009B2B96 /* ImageViewController.h */,
+				17E78EA419C57817009B2B96 /* ImageViewController.m */,
+			);
+			name = Steps;
 			sourceTree = "<group>";
 		};
 		17F37B8E19C4EE160045EC9F /* Recipe View */ = {
@@ -429,25 +498,33 @@
 				17F37B9F19C4EE160045EC9F /* ingredients.png in Resources */,
 				17F37B9A19C4EE160045EC9F /* clock.png in Resources */,
 				1729D83119C4AB6F00585407 /* Main.storyboard in Resources */,
+				17AF00F219C5840D00E802A6 /* mk_step0.png in Resources */,
 				17F37BAD19C507D30045EC9F /* lists.png in Resources */,
 				17F37BB019C507D30045EC9F /* profile.png in Resources */,
+				17AF00F419C5840D00E802A6 /* mk_step10.png in Resources */,
+				17AF00F119C5840D00E802A6 /* mk_splash.png in Resources */,
 				17E78E5819C547E8009B2B96 /* spaghetti_.png in Resources */,
 				17F37BB419C507D30045EC9F /* settings.png in Resources */,
 				17F37B9C19C4EE160045EC9F /* favorite.png in Resources */,
 				1729D83319C4AB6F00585407 /* Images.xcassets in Resources */,
+				17AF00FB19C5840D00E802A6 /* mk_step9.png in Resources */,
 				17F37B9919C4EE160045EC9F /* burninghouse.png in Resources */,
 				17F37BAE19C507D30045EC9F /* lists_active.png in Resources */,
+				17AF00F619C5840D00E802A6 /* mk_step3.png in Resources */,
 				17F37BA219C4EE160045EC9F /* x.png in Resources */,
+				17AF00FA19C5840D00E802A6 /* mk_step8.png in Resources */,
 				17E78E5E19C55713009B2B96 /* noodles.jpg in Resources */,
 				17F37B8B19C4E9900045EC9F /* DinBold.TTF in Resources */,
 				17F37BC019C508420045EC9F /* topbar_bg.png in Resources */,
 				17F37BB719C507EF0045EC9F /* clock.png in Resources */,
 				17F37BBD19C508420045EC9F /* bottombar_bg.png in Resources */,
 				17F37B8C19C4E9900045EC9F /* DinLight.TTF in Resources */,
+				17AF00F719C5840D00E802A6 /* mk_step4.png in Resources */,
 				17F37BB219C507D30045EC9F /* recipes.png in Resources */,
 				17E78E5C19C554F0009B2B96 /* grey_bg.png in Resources */,
 				17F37BB119C507D30045EC9F /* profile_active.png in Resources */,
 				17F37BAF19C507D30045EC9F /* mealking.png in Resources */,
+				17AF00F319C5840D00E802A6 /* mk_step1.png in Resources */,
 				17F37BBE19C508420045EC9F /* clock.png in Resources */,
 				17F37BA019C4EE160045EC9F /* ingredients_active.png in Resources */,
 				17E78E5619C547D1009B2B96 /* spaghetti_cover.png in Resources */,
@@ -456,6 +533,9 @@
 				17F37BBF19C508420045EC9F /* timer.png in Resources */,
 				17F37B8D19C4E9900045EC9F /* Neutraface.otf in Resources */,
 				17F37BB319C507D30045EC9F /* recipes_active.png in Resources */,
+				17AF00F519C5840D00E802A6 /* mk_step2.png in Resources */,
+				17AF00F819C5840D00E802A6 /* mk_step5.png in Resources */,
+				17AF00F919C5840D00E802A6 /* mk_step7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +555,15 @@
 			files = (
 				17E78E4619C52C08009B2B96 /* IngredientTableViewCell.m in Sources */,
 				17E78E4F19C538FE009B2B96 /* StepsTableViewController.m in Sources */,
+				17E78EA219C57741009B2B96 /* ContainerViewController.m in Sources */,
 				1729D82E19C4AB6F00585407 /* ViewController.m in Sources */,
 				17E78E4C19C538E8009B2B96 /* IngredientsTableViewController.m in Sources */,
+				17E78EA519C57817009B2B96 /* ImageViewController.m in Sources */,
 				1729D82B19C4AB6F00585407 /* AppDelegate.m in Sources */,
 				1729D82819C4AB6F00585407 /* main.m in Sources */,
 				605FE12819C4B61100504174 /* Recipe.m in Sources */,
+				17AF00BF19C579B900E802A6 /* FinalStepsViewController.m in Sources */,
+				17E78E6119C562D2009B2B96 /* StepsPageViewController.m in Sources */,
 				17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */,
 				17E78E4919C52C20009B2B96 /* StepsTableViewCell.m in Sources */,
 				17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */,

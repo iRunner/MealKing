@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="rUO-lY-CvZ">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="DinBold.TTF">
+            <string>DIN-Bold</string>
             <string>DIN-Bold</string>
             <string>DIN-Bold</string>
             <string>DIN-Bold</string>
@@ -286,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="1213" y="611.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Steps View Controller-->
         <scene sceneID="Ud7-XH-MQy">
             <objects>
-                <viewController storyboardIdentifier="recipeSteps" id="rUO-lY-CvZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recipeSteps" id="rUO-lY-CvZ" customClass="FinalStepsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MvS-rV-cKd"/>
                         <viewControllerLayoutGuide type="bottom" id="14E-Kk-geF"/>
@@ -299,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-4K-sfg" userLabel="navBar">
-                                <rect key="frame" x="0.0" y="0.0" width="61" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="768"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-3T-gZ9" userLabel="recipesButton">
                                         <rect key="frame" x="3" y="303" width="55" height="40"/>
@@ -329,6 +330,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l17-mO-fC0">
+                                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -344,6 +348,36 @@
                                     <constraint firstItem="fK5-Nt-d6S" firstAttribute="centerX" secondItem="Qy7-4K-sfg" secondAttribute="centerX" id="wsd-qW-fC1"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKb-jq-tXO">
+                                <rect key="frame" x="68" y="20" width="956" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topbar_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-DX-es0">
+                                        <rect key="frame" x="0.0" y="0.0" width="956" height="60"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spaghetti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4TM-gu-90B">
+                                        <rect key="frame" x="8" y="8" width="211" height="44"/>
+                                        <fontDescription key="fontDescription" name="DIN-Bold" family="DIN-Bold" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0Q-5D-f5f">
+                                        <rect key="frame" x="902" y="5" width="50" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6za-Ms-tgg">
+                                        <rect key="frame" x="834" y="5" width="50" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timer.png" translatesAutoresizingMaskIntoConstraints="NO" id="VGI-7x-PgH">
+                                        <rect key="frame" x="766" y="5" width="40" height="45"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLJ-E8-SFT">
+                                <rect key="frame" x="68" y="83" width="956" height="627"/>
+                                <connections>
+                                    <segue destination="54a-Fp-F7d" kind="embed" id="T6g-U3-pGP"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -355,7 +389,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nNU-Ys-Ajb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2295" y="-103"/>
+            <point key="canvasLocation" x="2299" y="15"/>
+        </scene>
+        <!--Container View Controller-->
+        <scene sceneID="2Bs-ch-94A">
+            <objects>
+                <viewController id="54a-Fp-F7d" customClass="ContainerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BLQ-G2-fwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gv-Ti-faP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Pk-vA-CVt">
+                        <rect key="frame" x="0.0" y="0.0" width="956" height="627"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQj-lL-RUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="805.5"/>
+        </scene>
+        <!--ImageViewController-->
+        <scene sceneID="xUy-9d-yLo">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IhB-Ad-Ywc" userLabel="ImageViewController" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lEO-lA-Cx0"/>
+                        <viewControllerLayoutGuide type="bottom" id="cWq-by-SgC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ARD-JI-em2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="9io-2Z-ndz">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="660"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iPad #n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vek-eE-OPN">
+                                <rect key="frame" x="381" y="350" width="262" height="109"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="52"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="image" destination="9io-2Z-ndz" id="zl4-VY-zcR"/>
+                        <outlet property="label" destination="Vek-eE-OPN" id="sO5-jw-UYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhW-cC-3eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2400" y="1552"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vhB-Gc-H7j">
@@ -454,6 +540,8 @@
         <image name="recipes_active.png" width="110" height="79"/>
         <image name="spaghetti_.png" width="88" height="88"/>
         <image name="spaghetti_cover.png" width="1938" height="719"/>
+        <image name="timer.png" width="60" height="72"/>
+        <image name="topbar_bg.png" width="1938" height="120"/>
         <image name="white_bg.png" width="646" height="776"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
