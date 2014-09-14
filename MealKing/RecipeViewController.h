@@ -10,8 +10,15 @@
 
 @interface RecipeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *foodPic;
+//basic buttons
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
+@property (weak, nonatomic) IBOutlet UIButton *listButton;
+@property (weak, nonatomic) IBOutlet UIButton *profileButton;
 
+
+
+//big views
+@property (weak, nonatomic) IBOutlet UIImageView *foodPic;
 @property (weak, nonatomic) IBOutlet UITableView *ingredientsList;
 @property (weak, nonatomic) IBOutlet UITableView *stepsList;
 @property (weak, nonatomic) IBOutlet UIView *infoView;

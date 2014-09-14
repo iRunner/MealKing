@@ -10,6 +10,8 @@
 
 @interface RecipeViewController ()
 
+@property BOOL favorite;
+
 @end
 
 @implementation RecipeViewController
@@ -38,6 +40,37 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//recipes //list //profile (buttons)
+- (IBAction)recipeButton:(id)sender {
+    
+}
+
+- (IBAction)listButton:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"List" message:@"eggs" delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
+- (IBAction)profieButton:(id)sender {
+    
+}
+
+//
+- (IBAction)favoritesButton:(id)sender {
+    
+    if (self.favorite) {
+        NSLog(@"inside");
+        UIImage *tap = [UIImage imageNamed:@"favorite.png"];
+        [self.favoriteButton setImage:tap forState:UIControlStateNormal];
+        _favorite = FALSE;
+    }
+    else if (!self.favorite) {
+        UIImage *tap = [UIImage imageNamed:@"favorite_active.png"];
+        [self.favoriteButton setImage:tap forState:UIControlStateNormal];
+        _favorite = TRUE;
+    }
+    
 }
 
 /*

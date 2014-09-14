@@ -14,6 +14,10 @@
         </mutableArray>
         <mutableArray key="DinLight.TTF">
             <string>DIN-Light</string>
+            <string>DIN-Light</string>
+            <string>DIN-Light</string>
+            <string>DIN-Light</string>
+            <string>DIN-Light</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -38,9 +42,12 @@
                                             <constraint firstAttribute="width" constant="55" id="OnN-ul-bjB"/>
                                             <constraint firstAttribute="height" constant="40" id="XYE-oI-QMh"/>
                                         </constraints>
-                                        <state key="normal" image="recipes.png">
+                                        <state key="normal" image="recipes_active.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="recipeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0H-dc-gcD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-6x-Noc">
                                         <rect key="frame" x="3" y="364" width="55" height="40"/>
@@ -50,6 +57,9 @@
                                         <state key="normal" image="lists.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="listButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mq-BM-td4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUC-HK-b0t">
                                         <rect key="frame" x="3" y="425" width="55" height="40"/>
@@ -59,6 +69,9 @@
                                         <state key="normal" image="profile.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="profieButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyb-wQ-YIE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -84,34 +97,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CKY-BF-TCh">
                                 <rect key="frame" x="384" y="391" width="320" height="377"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WAP-la-bsi" customClass="ListTableView">
-                                <rect key="frame" x="64" y="443" width="320" height="325"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7yS-8W-PPv">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7yS-8W-PPv" id="gvc-QH-62r">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l9E-S8-Wha" customClass="ListTableView">
-                                <rect key="frame" x="384" y="443" width="320" height="325"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="B7E-v6-NrV">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B7E-v6-NrV" id="feR-Ih-Zc6">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giv-rO-mk4">
                                 <rect key="frame" x="704" y="398" width="320" height="377"/>
                                 <subviews>
@@ -127,9 +112,6 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="favorite.png" translatesAutoresizingMaskIntoConstraints="NO" id="7km-5k-iN3">
-                                        <rect key="frame" x="40" y="28" width="50" height="47"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="ATS-aR-Scg">
                                         <rect key="frame" x="40" y="102" width="50" height="47"/>
                                     </imageView>
@@ -154,6 +136,15 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1g-gH-7sI">
+                                        <rect key="frame" x="40" y="28" width="50" height="47"/>
+                                        <state key="normal" image="favorite.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="favoritesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HnR-Dq-64f"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -169,6 +160,18 @@
                                 <color key="textColor" red="0.32156862745098036" green="0.12549019607843137" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTT-N3-q3v">
+                                <rect key="frame" x="384" y="443" width="320" height="325"/>
+                                <connections>
+                                    <segue destination="tLx-6W-xje" kind="embed" id="NAm-pS-Upj"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRG-GB-4Sb">
+                                <rect key="frame" x="64" y="443" width="320" height="325"/>
+                                <connections>
+                                    <segue destination="7x4-ef-7Tl" kind="embed" id="oqc-0c-dcd"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -176,16 +179,105 @@
                     <connections>
                         <outlet property="commentsLabel" destination="NTu-JW-RV2" id="7B0-PF-cXu"/>
                         <outlet property="difficultyLabel" destination="m0Q-Q5-bMs" id="XfF-CO-Lxc"/>
+                        <outlet property="favoriteButton" destination="O1g-gH-7sI" id="ChT-5E-KnB"/>
                         <outlet property="favoritesLabel" destination="xjs-ud-vr0" id="c9l-uv-AnL"/>
                         <outlet property="foodPic" destination="Jaw-yQ-xcE" id="Zjl-bN-usj"/>
                         <outlet property="infoView" destination="giv-rO-mk4" id="e9w-0z-oFZ"/>
-                        <outlet property="ingredientsList" destination="WAP-la-bsi" id="HVB-fh-lXw"/>
-                        <outlet property="stepsList" destination="l9E-S8-Wha" id="eyv-JX-k9n"/>
+                        <outlet property="listButton" destination="Tfb-6x-Noc" id="aZ5-1a-VwW"/>
+                        <outlet property="profileButton" destination="bUC-HK-b0t" id="DYi-VU-FGX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-103"/>
+        </scene>
+        <!--Ingredients Table View Controller-->
+        <scene sceneID="LOS-u4-OKc">
+            <objects>
+                <tableViewController id="7x4-ef-7Tl" customClass="IngredientsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="eeh-PR-j6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient" rowHeight="60" id="MHD-5t-Rcb" customClass="IngredientTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MHD-5t-Rcb" id="Kn4-Hr-vmu">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spaghetti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-MV-8Bm">
+                                            <rect key="frame" x="84" y="10" width="258" height="21"/>
+                                            <fontDescription key="fontDescription" name="DIN-Light" family="DIN-Light" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12 ounces" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nu-Dw-yFX">
+                                            <rect key="frame" x="84" y="29" width="258" height="21"/>
+                                            <fontDescription key="fontDescription" name="DIN-Light" family="DIN-Light" pointSize="12"/>
+                                            <color key="textColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ir5-XS-9vL">
+                                            <rect key="frame" x="20" y="7" width="45" height="45"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amount" destination="0Nu-Dw-yFX" id="uNu-N8-nYe"/>
+                                    <outlet property="name" destination="dXY-MV-8Bm" id="VJM-RO-szp"/>
+                                    <outlet property="picture" destination="Ir5-XS-9vL" id="Lk5-xQ-oIK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7x4-ef-7Tl" id="Ovl-tz-LmY"/>
+                            <outlet property="delegate" destination="7x4-ef-7Tl" id="ezu-7x-RPX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3D-dd-hhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773" y="611.5"/>
+        </scene>
+        <!--Steps Table View Controller-->
+        <scene sceneID="kgI-AI-4aw">
+            <objects>
+                <tableViewController id="tLx-6W-xje" customClass="StepsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="E8n-ZC-cQA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="step" rowHeight="60" id="zJb-Dm-9AN" customClass="StepsTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zJb-Dm-9AN" id="QtX-GB-5m5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqm-Bi-FI4">
+                                            <rect key="frame" x="9" y="14" width="32" height="32"/>
+                                            <fontDescription key="fontDescription" name="DIN-Light" family="DIN-Light" pointSize="26"/>
+                                            <color key="textColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spaghetti" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78i-TR-8wi">
+                                            <rect key="frame" x="49" y="19" width="258" height="21"/>
+                                            <fontDescription key="fontDescription" name="DIN-Light" family="DIN-Light" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="tLx-6W-xje" id="Nmi-bx-dyQ"/>
+                            <outlet property="delegate" destination="tLx-6W-xje" id="I8n-t2-5Nq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWC-C7-Aks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1213" y="611.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ud7-XH-MQy">
@@ -352,6 +444,7 @@
         <image name="lists.png" width="110" height="69"/>
         <image name="profile.png" width="110" height="77"/>
         <image name="recipes.png" width="110" height="79"/>
+        <image name="recipes_active.png" width="110" height="79"/>
         <image name="white_bg.png" width="645" height="776"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

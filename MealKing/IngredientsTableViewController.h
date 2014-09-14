@@ -1,5 +1,5 @@
 //
-//  ListTableView.h
+//  IngredientsTableViewController.h
 //  MealKing
 //
 //  Created by Jordan White on 9/13/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ListTableView : UITableView
+@interface IngredientsTableViewController : UITableViewController
 
 @end

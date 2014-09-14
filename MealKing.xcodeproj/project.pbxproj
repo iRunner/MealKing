@@ -13,14 +13,12 @@
 		1729D83119C4AB6F00585407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1729D82F19C4AB6F00585407 /* Main.storyboard */; };
 		1729D83319C4AB6F00585407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1729D83219C4AB6F00585407 /* Images.xcassets */; };
 		1729D83F19C4AB6F00585407 /* MealKingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729D83E19C4AB6F00585407 /* MealKingTests.m */; };
-		17C2139D19C4C6AF00A0D30D /* lists.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139819C4C6AF00A0D30D /* lists.png */; };
-		17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139919C4C6AF00A0D30D /* mealking.png */; };
-		17C2139F19C4C6AF00A0D30D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139A19C4C6AF00A0D30D /* profile.png */; };
-		17C213A019C4C6AF00A0D30D /* recipes.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139B19C4C6AF00A0D30D /* recipes.png */; };
-		17C213A119C4C6AF00A0D30D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 17C2139C19C4C6AF00A0D30D /* settings.png */; };
 		17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213A819C4DB3C00A0D30D /* ListTableViewController.m */; };
-		17C213AF19C4DFFE00A0D30D /* ListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213AE19C4DFFE00A0D30D /* ListTableView.m */; };
 		17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C213B119C4E04900A0D30D /* RecipeViewController.m */; };
+		17E78E4619C52C08009B2B96 /* IngredientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E4519C52C08009B2B96 /* IngredientTableViewCell.m */; };
+		17E78E4919C52C20009B2B96 /* StepsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E4819C52C20009B2B96 /* StepsTableViewCell.m */; };
+		17E78E4C19C538E8009B2B96 /* IngredientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E4B19C538E8009B2B96 /* IngredientsTableViewController.m */; };
+		17E78E4F19C538FE009B2B96 /* StepsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E78E4E19C538FE009B2B96 /* StepsTableViewController.m */; };
 		17F37B8B19C4E9900045EC9F /* DinBold.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8819C4E9900045EC9F /* DinBold.TTF */; };
 		17F37B8C19C4E9900045EC9F /* DinLight.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8919C4E9900045EC9F /* DinLight.TTF */; };
 		17F37B8D19C4E9900045EC9F /* Neutraface.otf in Resources */ = {isa = PBXBuildFile; fileRef = 17F37B8A19C4E9900045EC9F /* Neutraface.otf */; };
@@ -47,7 +45,6 @@
 		17F37BBE19C508420045EC9F /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBA19C508420045EC9F /* clock.png */; };
 		17F37BBF19C508420045EC9F /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBB19C508420045EC9F /* timer.png */; };
 		17F37BC019C508420045EC9F /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBC19C508420045EC9F /* topbar_bg.png */; };
-		1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 369239594A824C0E897C2FB4 /* libPods-MealKing.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		605FE12819C4B61100504174 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FE12719C4B61100504174 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
@@ -74,17 +71,18 @@
 		1729D83819C4AB6F00585407 /* MealKingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MealKingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1729D83D19C4AB6F00585407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1729D83E19C4AB6F00585407 /* MealKingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealKingTests.m; sourceTree = "<group>"; };
-		17C2139819C4C6AF00A0D30D /* lists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lists.png; sourceTree = "<group>"; };
-		17C2139919C4C6AF00A0D30D /* mealking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mealking.png; sourceTree = "<group>"; };
-		17C2139A19C4C6AF00A0D30D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
-		17C2139B19C4C6AF00A0D30D /* recipes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recipes.png; sourceTree = "<group>"; };
-		17C2139C19C4C6AF00A0D30D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		17C213A719C4DB3C00A0D30D /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
 		17C213A819C4DB3C00A0D30D /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
-		17C213AD19C4DFFE00A0D30D /* ListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableView.h; sourceTree = "<group>"; };
-		17C213AE19C4DFFE00A0D30D /* ListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableView.m; sourceTree = "<group>"; };
 		17C213B019C4E04900A0D30D /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		17C213B119C4E04900A0D30D /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		17E78E4419C52C08009B2B96 /* IngredientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientTableViewCell.h; sourceTree = "<group>"; };
+		17E78E4519C52C08009B2B96 /* IngredientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientTableViewCell.m; sourceTree = "<group>"; };
+		17E78E4719C52C20009B2B96 /* StepsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsTableViewCell.h; sourceTree = "<group>"; };
+		17E78E4819C52C20009B2B96 /* StepsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsTableViewCell.m; sourceTree = "<group>"; };
+		17E78E4A19C538E8009B2B96 /* IngredientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientsTableViewController.h; sourceTree = "<group>"; };
+		17E78E4B19C538E8009B2B96 /* IngredientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientsTableViewController.m; sourceTree = "<group>"; };
+		17E78E4D19C538FE009B2B96 /* StepsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepsTableViewController.h; sourceTree = "<group>"; };
+		17E78E4E19C538FE009B2B96 /* StepsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepsTableViewController.m; sourceTree = "<group>"; };
 		17F37B8819C4E9900045EC9F /* DinBold.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DinBold.TTF; sourceTree = "<group>"; };
 		17F37B8919C4E9900045EC9F /* DinLight.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = DinLight.TTF; sourceTree = "<group>"; };
 		17F37B8A19C4E9900045EC9F /* Neutraface.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Neutraface.otf; sourceTree = "<group>"; };
@@ -114,18 +112,9 @@
 		369239594A824C0E897C2FB4 /* libPods-MealKing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MealKing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605FE12619C4B61100504174 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Objects/Recipe.h; sourceTree = "<group>"; };
 		605FE12719C4B61100504174 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Objects/Recipe.m; sourceTree = "<group>"; };
-		8D26D8A0BAF24DCBA28AD196 /* Pods-MealKing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealKing.xcconfig"; path = "Pods/Pods-MealKing.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1729D81F19C4AB6F00585407 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1931F5DC36BA427D827B563C /* libPods-MealKing.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1729D83519C4AB6F00585407 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,7 +131,6 @@
 				1729D82419C4AB6F00585407 /* MealKing */,
 				1729D83B19C4AB6F00585407 /* MealKingTests */,
 				1729D82319C4AB6F00585407 /* Products */,
-				8D26D8A0BAF24DCBA28AD196 /* Pods-MealKing.xcconfig */,
 				F13B83A732144B8687D01DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -161,7 +149,7 @@
 			children = (
 				17C213A319C4DA7000A0D30D /* Executives */,
 				605FE12519C4B5C100504174 /* Objects */,
-				17C213AA19C4DB4B00A0D30D /* Controllers */,
+				17C213AA19C4DB4B00A0D30D /* Recipe View */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
 				1729D83219C4AB6F00585407 /* Images.xcassets */,
 				17F37BA319C4EE380045EC9F /* fonts */,
@@ -205,7 +193,6 @@
 				17F37BB519C507EF0045EC9F /* Recipe Feed */,
 				17F37BA419C507D30045EC9F /* Nav Bar */,
 				17F37B8E19C4EE160045EC9F /* Recipe View */,
-				17C213B419C4E1A400A0D30D /* nav bar */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -221,15 +208,15 @@
 			name = Executives;
 			sourceTree = "<group>";
 		};
-		17C213AA19C4DB4B00A0D30D /* Controllers */ = {
+		17C213AA19C4DB4B00A0D30D /* Recipe View */ = {
 			isa = PBXGroup;
 			children = (
 				17C213B019C4E04900A0D30D /* RecipeViewController.h */,
 				17C213B119C4E04900A0D30D /* RecipeViewController.m */,
-				17C213AD19C4DFFE00A0D30D /* ListTableView.h */,
-				17C213AE19C4DFFE00A0D30D /* ListTableView.m */,
+				17E78E5019C53961009B2B96 /* Ingredients */,
+				17E78E5119C53967009B2B96 /* Steps */,
 			);
-			name = Controllers;
+			name = "Recipe View";
 			sourceTree = "<group>";
 		};
 		17C213B319C4E18A00A0D30D /* junk */ = {
@@ -241,16 +228,26 @@
 			name = junk;
 			sourceTree = "<group>";
 		};
-		17C213B419C4E1A400A0D30D /* nav bar */ = {
+		17E78E5019C53961009B2B96 /* Ingredients */ = {
 			isa = PBXGroup;
 			children = (
-				17C2139819C4C6AF00A0D30D /* lists.png */,
-				17C2139919C4C6AF00A0D30D /* mealking.png */,
-				17C2139A19C4C6AF00A0D30D /* profile.png */,
-				17C2139B19C4C6AF00A0D30D /* recipes.png */,
-				17C2139C19C4C6AF00A0D30D /* settings.png */,
+				17E78E4A19C538E8009B2B96 /* IngredientsTableViewController.h */,
+				17E78E4B19C538E8009B2B96 /* IngredientsTableViewController.m */,
+				17E78E4419C52C08009B2B96 /* IngredientTableViewCell.h */,
+				17E78E4519C52C08009B2B96 /* IngredientTableViewCell.m */,
 			);
-			name = "nav bar";
+			name = Ingredients;
+			sourceTree = "<group>";
+		};
+		17E78E5119C53967009B2B96 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				17E78E4D19C538FE009B2B96 /* StepsTableViewController.h */,
+				17E78E4E19C538FE009B2B96 /* StepsTableViewController.m */,
+				17E78E4719C52C20009B2B96 /* StepsTableViewCell.h */,
+				17E78E4819C52C20009B2B96 /* StepsTableViewCell.m */,
+			);
+			name = Steps;
 			sourceTree = "<group>";
 		};
 		17F37B8E19C4EE160045EC9F /* Recipe View */ = {
@@ -338,11 +335,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1729D84219C4AB6F00585407 /* Build configuration list for PBXNativeTarget "MealKing" */;
 			buildPhases = (
-				31920834A46341C0A45C6AC3 /* Check Pods Manifest.lock */,
 				1729D81E19C4AB6F00585407 /* Sources */,
-				1729D81F19C4AB6F00585407 /* Frameworks */,
 				1729D82019C4AB6F00585407 /* Resources */,
-				6927AE4B742F4C4E9BB9AEE7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -418,24 +412,19 @@
 				17F37B9F19C4EE160045EC9F /* ingredients.png in Resources */,
 				17F37B9A19C4EE160045EC9F /* clock.png in Resources */,
 				1729D83119C4AB6F00585407 /* Main.storyboard in Resources */,
-				17C213A119C4C6AF00A0D30D /* settings.png in Resources */,
 				17F37BAD19C507D30045EC9F /* lists.png in Resources */,
 				17F37BA119C4EE160045EC9F /* white_bg.png in Resources */,
 				17F37BB019C507D30045EC9F /* profile.png in Resources */,
 				17F37BB419C507D30045EC9F /* settings.png in Resources */,
 				17F37B9C19C4EE160045EC9F /* favorite.png in Resources */,
-				17C213A019C4C6AF00A0D30D /* recipes.png in Resources */,
 				1729D83319C4AB6F00585407 /* Images.xcassets in Resources */,
 				17F37B9919C4EE160045EC9F /* burninghouse.png in Resources */,
-				17C2139D19C4C6AF00A0D30D /* lists.png in Resources */,
-				17C2139F19C4C6AF00A0D30D /* profile.png in Resources */,
 				17F37BAE19C507D30045EC9F /* lists_active.png in Resources */,
 				17F37BA219C4EE160045EC9F /* x.png in Resources */,
 				17F37B8B19C4E9900045EC9F /* DinBold.TTF in Resources */,
 				17F37BC019C508420045EC9F /* topbar_bg.png in Resources */,
 				17F37BB719C507EF0045EC9F /* clock.png in Resources */,
 				17F37BBD19C508420045EC9F /* bottombar_bg.png in Resources */,
-				17C2139E19C4C6AF00A0D30D /* mealking.png in Resources */,
 				17F37B8C19C4E9900045EC9F /* DinLight.TTF in Resources */,
 				17F37BB219C507D30045EC9F /* recipes.png in Resources */,
 				17F37BB119C507D30045EC9F /* profile_active.png in Resources */,
@@ -459,50 +448,20 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		31920834A46341C0A45C6AC3 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6927AE4B742F4C4E9BB9AEE7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-MealKing-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1729D81E19C4AB6F00585407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E78E4619C52C08009B2B96 /* IngredientTableViewCell.m in Sources */,
+				17E78E4F19C538FE009B2B96 /* StepsTableViewController.m in Sources */,
 				1729D82E19C4AB6F00585407 /* ViewController.m in Sources */,
+				17E78E4C19C538E8009B2B96 /* IngredientsTableViewController.m in Sources */,
 				1729D82B19C4AB6F00585407 /* AppDelegate.m in Sources */,
 				1729D82819C4AB6F00585407 /* main.m in Sources */,
-				17C213AF19C4DFFE00A0D30D /* ListTableView.m in Sources */,
 				605FE12819C4B61100504174 /* Recipe.m in Sources */,
 				17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */,
+				17E78E4919C52C20009B2B96 /* StepsTableViewCell.m in Sources */,
 				17C213A919C4DB3C00A0D30D /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,7 +576,6 @@
 		};
 		1729D84319C4AB6F00585407 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D26D8A0BAF24DCBA28AD196 /* Pods-MealKing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -633,7 +591,6 @@
 		};
 		1729D84419C4AB6F00585407 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D26D8A0BAF24DCBA28AD196 /* Pods-MealKing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
