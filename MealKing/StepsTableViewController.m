@@ -40,8 +40,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
+
+    // Return the size of the array
     return 5;
 }
 
@@ -51,6 +51,8 @@
     
     // Configure the cell...
     [cell setBackgroundColor:[UIColor clearColor]];
+    
+    
     
     return cell;
 }

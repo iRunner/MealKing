@@ -89,19 +89,19 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spaghetti_cover.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jaw-yQ-xcE">
-                                <rect key="frame" x="64" y="0.0" width="960" height="390"/>
+                                <rect key="frame" x="64" y="0.0" width="960" height="392"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="kja-rA-rJe">
-                                <rect key="frame" x="64" y="391" width="320" height="377"/>
+                                <rect key="frame" x="64" y="392" width="321" height="378"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CKY-BF-TCh">
-                                <rect key="frame" x="384" y="391" width="320" height="377"/>
+                                <rect key="frame" x="384" y="392" width="320" height="378"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="giv-rO-mk4">
-                                <rect key="frame" x="704" y="398" width="320" height="377"/>
+                                <rect key="frame" x="704" y="398" width="326" height="378"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grey_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRH-pD-neb">
-                                        <rect key="frame" x="0.0" y="-7" width="320" height="391"/>
+                                        <rect key="frame" x="0.0" y="-6" width="321" height="391"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVs-u6-uAD">
                                         <rect key="frame" x="24" y="271" width="273" height="80"/>
@@ -195,13 +195,10 @@
         <scene sceneID="LOS-u4-OKc">
             <objects>
                 <tableViewController id="7x4-ef-7Tl" customClass="IngredientsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="eeh-PR-j6Y">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="eeh-PR-j6Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="separatorColor" red="0.92941176469999998" green="0.12549019610000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ingredient" rowHeight="60" id="MHD-5t-Rcb" customClass="IngredientTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -250,7 +247,7 @@
         <scene sceneID="kgI-AI-4aw">
             <objects>
                 <tableViewController id="tLx-6W-xje" customClass="StepsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="E8n-ZC-cQA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="E8n-ZC-cQA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="325"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -454,7 +451,7 @@
         <image name="recipes_active.png" width="110" height="79"/>
         <image name="spaghetti_.png" width="88" height="88"/>
         <image name="spaghetti_cover.png" width="1938" height="719"/>
-        <image name="white_bg.png" width="645" height="776"/>
+        <image name="white_bg.png" width="646" height="776"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

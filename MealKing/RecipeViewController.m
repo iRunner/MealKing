@@ -64,11 +64,16 @@
         UIImage *tap = [UIImage imageNamed:@"favorite.png"];
         [self.favoriteButton setImage:tap forState:UIControlStateNormal];
         _favorite = FALSE;
+        
+        self.favoritesLabel.text = [NSString stringWithFormat:@"%i", 450];
     }
     else if (!self.favorite) {
         UIImage *tap = [UIImage imageNamed:@"favorite_active.png"];
         [self.favoriteButton setImage:tap forState:UIControlStateNormal];
         _favorite = TRUE;
+        
+//        int i = 450
+        self.favoritesLabel.text = [NSString stringWithFormat:@"%i", 451];
     }
     
 }
