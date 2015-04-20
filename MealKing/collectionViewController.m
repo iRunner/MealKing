@@ -35,27 +35,11 @@
     
     self.recipes = [NSMutableArray array];
     
-    NSURL *urlPrefix =
-    [NSURL URLWithString:@"https://raw.github.com/ShadoFlameX/PhotoCollectionView/master/Photos/"];
     
-    NSInteger photoIndex = 0;
-    
-    
-    self.images = [[NSArray alloc] initWithObjects:@"bakedpotato.png", @"friedchicken.png", @"grilledchicken.png", @"pizza.png", @"salmon.png", @"sandwich.png", @"spaghetti.png", @"tacos.png", @"wings.png", nil];
+    self.images = [[NSArray alloc] initWithObjects:@"bakedpotato.png", @"friedchicken.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"tacos.png", @"wings.png", nil];
     self.names =  [[NSArray alloc] initWithObjects:@"Baked Potato", @"Fried Chicken", @"Grilled Chicken", @"Pizza", @"Salmon",@"Sandwich", @"Spanghetti", @"Tacos", @"Wings", nil];
 
     
-    
-    for (NSString *name in self.names) {
-        
-        recipeCell *cell = [[recipeCell alloc] init];
-        
-        
-        [self.recipes addObject:cell];
-        
-
-        
-    }
     
 }
 

@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+
 
 @interface Fetcher : NSObject
 
+
+
 - (NSArray*)fetchFeedWith:(NSString *)inputURL;
+
+
 
 @end

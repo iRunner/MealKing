@@ -17,8 +17,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.backgroundColor = [UIColor redColor];//[UIColor colorWithWhite:0.85f alpha:1.0f];
-        
+        self.backgroundColor = [UIColor redColor];
         self.mainPic = [[UIImageView alloc] initWithFrame:self.bounds];
         self.mainPic.contentMode = UIViewContentModeScaleAspectFill;
         self.mainPic.clipsToBounds = YES;
@@ -42,7 +41,6 @@
 {
     [super prepareForReuse];
     
-    //self.mainPic.image = nil;
     
     
     
