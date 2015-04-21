@@ -10,12 +10,12 @@
 
 @interface recipeCell : UICollectionViewCell
 
-@property (strong, nonatomic) IBOutlet UIImageView *mainPic;
-@property (strong, nonatomic) IBOutlet UILabel *name;
-@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
-
-
+@property (strong, atomic) IBOutlet UIImageView *mainPic;
+@property (strong, atomic) IBOutlet UILabel *name;
+@property (weak, atomic) IBOutlet UILabel *timeLabel;
 @property  UILabel *time;
+
+@property (strong, atomic) NSDictionary *recipe;
 
 
 @end

@@ -28,5 +28,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *difficultyLabel;
 
+@property (strong, atomic) NSDictionary *recipe;
 
 @end

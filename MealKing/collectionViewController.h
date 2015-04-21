@@ -15,11 +15,14 @@ static NSString * const recipeCellIdentifier = @"recipeCell";
 
 @interface collectionViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *dataIndecator;
+
 @property (strong, nonatomic) IBOutlet recipeLayout *recipeLayout;
 
-@property (nonatomic, strong) NSMutableArray *recipes;
+@property (atomic, strong) NSArray *recipes;
 
 @property AppDelegate *myApp;
 
+@property (strong, nonatomic) IBOutlet UICollectionView *recipeCollectionView;
 
 @end

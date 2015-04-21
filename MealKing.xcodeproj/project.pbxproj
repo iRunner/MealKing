@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		172924FE19C5AEFE00397585 /* mk_quit.png in Resources */ = {isa = PBXBuildFile; fileRef = 172924FD19C5AEFE00397585 /* mk_quit.png */; };
-		1729250119C5B13E00397585 /* Fetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 1729250019C5B13E00397585 /* Fetcher.m */; };
 		1729250319C5BD2C00397585 /* recommended_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1729250219C5BD2C00397585 /* recommended_bar.png */; };
 		1729251019C5C37F00397585 /* blackpepper.png in Resources */ = {isa = PBXBuildFile; fileRef = 1729250519C5C37F00397585 /* blackpepper.png */; };
 		1729251119C5C37F00397585 /* garlicpowder.png in Resources */ = {isa = PBXBuildFile; fileRef = 1729250619C5C37F00397585 /* garlicpowder.png */; };
@@ -91,7 +90,6 @@
 		17F37BBE19C508420045EC9F /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBA19C508420045EC9F /* clock.png */; };
 		17F37BBF19C508420045EC9F /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBB19C508420045EC9F /* timer.png */; };
 		17F37BC019C508420045EC9F /* topbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F37BBC19C508420045EC9F /* topbar_bg.png */; };
-		605FE12819C4B61100504174 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 605FE12719C4B61100504174 /* Recipe.m */; };
 		60687C2F1AE58D7000479E8F /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60687C2E1AE58D7000479E8F /* settings.plist */; };
 		C5CA906A314C6B2A92C6A195 /* libPods-MealKing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3E27C7A9ACCDADFDB59C49 /* libPods-MealKing.a */; };
 /* End PBXBuildFile section */
@@ -108,8 +106,6 @@
 
 /* Begin PBXFileReference section */
 		172924FD19C5AEFE00397585 /* mk_quit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mk_quit.png; sourceTree = "<group>"; };
-		172924FF19C5B13E00397585 /* Fetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fetcher.h; path = ../Fetcher.h; sourceTree = "<group>"; };
-		1729250019C5B13E00397585 /* Fetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fetcher.m; path = ../Fetcher.m; sourceTree = "<group>"; };
 		1729250219C5BD2C00397585 /* recommended_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recommended_bar.png; sourceTree = "<group>"; };
 		1729250519C5C37F00397585 /* blackpepper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackpepper.png; sourceTree = "<group>"; };
 		1729250619C5C37F00397585 /* garlicpowder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garlicpowder.png; sourceTree = "<group>"; };
@@ -210,8 +206,6 @@
 		17F37BBB19C508420045EC9F /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
 		17F37BBC19C508420045EC9F /* topbar_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar_bg.png; sourceTree = "<group>"; };
 		19BF8B2CC4C00B3A0011D349 /* Pods-MealKing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealKing.release.xcconfig"; path = "Pods/Target Support Files/Pods-MealKing/Pods-MealKing.release.xcconfig"; sourceTree = "<group>"; };
-		605FE12619C4B61100504174 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Objects/Recipe.h; sourceTree = "<group>"; };
-		605FE12719C4B61100504174 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Objects/Recipe.m; sourceTree = "<group>"; };
 		60687C2E1AE58D7000479E8F /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 		AC3E27C7A9ACCDADFDB59C49 /* libPods-MealKing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MealKing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BAEF1AC73F6B5CCB284F91 /* Pods-MealKing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MealKing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MealKing/Pods-MealKing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -277,12 +271,8 @@
 		1729D82419C4AB6F00585407 /* MealKing */ = {
 			isa = PBXGroup;
 			children = (
-				60687C2E1AE58D7000479E8F /* settings.plist */,
-				172924FF19C5B13E00397585 /* Fetcher.h */,
-				1729250019C5B13E00397585 /* Fetcher.m */,
 				17AF011B19C5903900E802A6 /* RecipeFeedCollectionView */,
 				17C213A319C4DA7000A0D30D /* Executives */,
-				605FE12519C4B5C100504174 /* Objects */,
 				17C213AA19C4DB4B00A0D30D /* Recipe View */,
 				1729D82F19C4AB6F00585407 /* Main.storyboard */,
 				17E78E6219C562DB009B2B96 /* Steps */,
@@ -299,6 +289,7 @@
 		1729D82519C4AB6F00585407 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60687C2E1AE58D7000479E8F /* settings.plist */,
 				1729D82619C4AB6F00585407 /* Info.plist */,
 				1729D82719C4AB6F00585407 /* main.m */,
 			);
@@ -515,15 +506,6 @@
 				17F37BBC19C508420045EC9F /* topbar_bg.png */,
 			);
 			path = Instructions;
-			sourceTree = "<group>";
-		};
-		605FE12519C4B5C100504174 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				605FE12619C4B61100504174 /* Recipe.h */,
-				605FE12719C4B61100504174 /* Recipe.m */,
-			);
-			name = Objects;
 			sourceTree = "<group>";
 		};
 		8D3EFEB991FDFD094EB5E302 /* Pods */ = {
@@ -753,10 +735,8 @@
 				17E78E4C19C538E8009B2B96 /* IngredientsTableViewController.m in Sources */,
 				17AF012419C5905800E802A6 /* recipeLayout.m in Sources */,
 				17E78EA519C57817009B2B96 /* ImageViewController.m in Sources */,
-				1729250119C5B13E00397585 /* Fetcher.m in Sources */,
 				1729D82B19C4AB6F00585407 /* AppDelegate.m in Sources */,
 				1729D82819C4AB6F00585407 /* main.m in Sources */,
-				605FE12819C4B61100504174 /* Recipe.m in Sources */,
 				17AF00BF19C579B900E802A6 /* FinalStepsViewController.m in Sources */,
 				17C213B219C4E04900A0D30D /* RecipeViewController.m in Sources */,
 				17E78E4919C52C20009B2B96 /* StepsTableViewCell.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Fetcher.h"
+
 
 
 
@@ -20,22 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // Get config file 
+    // Get config file
     NSString *path = [[NSBundle mainBundle] pathForResource:@"settings" ofType:@"plist"];
     self.settings = [[NSDictionary alloc] initWithContentsOfFile:path];
-    
-    Fetcher *fetcher = [[Fetcher alloc] init];
-    
-    self.recipes = [fetcher fetchFeedWith:[self.settings objectForKey:@"recipesurl"]];
-    
-    
-    
-    
-    NSLog(@"%@", self.recipes);
-    
-    
-    
-    
     
     return YES;
 }

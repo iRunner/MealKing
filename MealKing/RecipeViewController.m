@@ -27,7 +27,6 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"hit the right VC");
     [super viewDidLoad];
     
 

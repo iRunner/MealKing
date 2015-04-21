@@ -7,6 +7,7 @@
 //
 
 #import "collectionViewController.h"
+#import "RecipeViewController.h"
 
 
 @interface collectionViewController ()
@@ -33,13 +34,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.recipes = [NSMutableArray array];
+    self.myApp = [[UIApplication sharedApplication] delegate];
     
     
-    self.images = [[NSArray alloc] initWithObjects:@"bakedpotato.png", @"friedchicken.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"spaghetti.png", @"tacos.png", @"wings.png", nil];
-    self.names =  [[NSArray alloc] initWithObjects:@"Baked Potato", @"Fried Chicken", @"Grilled Chicken", @"Pizza", @"Salmon",@"Sandwich", @"Spanghetti", @"Tacos", @"Wings", nil];
-
+    [self.dataIndecator startAnimating];
+    self.dataIndecator.hidesWhenStopped = YES;
     
+    NSString *url = [self.myApp.settings objectForKey:@"recipesurl"];
+    
+    [self fetchFeedWith:url andIndecator: self.dataIndecator];
+ 
     
 }
 
@@ -53,7 +57,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 9;
+    return [self.recipes count];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
@@ -71,18 +75,91 @@
     
     recipeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:recipeCellIdentifier forIndexPath:indexPath];
     
-    NSLog(@"%@", self.images);
+    
+    cell.mainPic.image = [[self.recipes objectAtIndex:indexPath.section] objectForKey:@"main_image"];
+    
+    cell.name.text = [[self.recipes objectAtIndex:indexPath.section] objectForKey:@"title"];
     
     
-    cell.mainPic.image = [UIImage imageNamed:[self.images objectAtIndex:indexPath.section]];
-    cell.name.text = [[self.names objectAtIndex:indexPath.section] uppercaseString];
-    
-    int r = arc4random()%100 + 15;
-    cell.timeLabel.text = [NSString stringWithFormat:@"%i min ", r];
+    cell.timeLabel.text = [NSString stringWithFormat:@"%@", [[self.recipes objectAtIndex:indexPath.section] objectForKey:@"time_minutes"]];
     
     return cell;
 }
+                    
+                    
+                    
+
+- (NSArray*)fetchFeedWith:(NSString *)inputURL andIndecator: (UIActivityIndicatorView *)indecator {
+    
+    __block NSArray *recipes = nil;
+    
+    
+    NSURL *URL = [NSURL URLWithString:inputURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    [NSURLConnection sendAsynchronousRequest: request queue: [NSOperationQueue mainQueue] completionHandler:
+     ^(NSURLResponse* response, NSData* data, NSError* connectionError){
+         
+         //the same as calling self, but its a safety to make sure self hasn't been set to nil
+         //since this is inside of a 'block'
+         recipes = [self extractData: data];
+         
+         [indecator performSelectorOnMainThread:@selector(stopAnimating) withObject:nil waitUntilDone:YES];
+         
+         self.recipes = recipes;
+         
+         dispatch_async(dispatch_get_main_queue(), ^{
+             [self.recipeCollectionView reloadData];
+             
+         });
+         
+     }];
+    return recipes;
+}
+                    
+#pragma mark - extraction
+                    
+- (NSArray *) extractData: (NSData*) someData  {
+    
+    NSArray *allCourses = [NSJSONSerialization JSONObjectWithData:someData options:NSJSONReadingMutableContainers error:nil];
+    
+    for(NSDictionary *item in allCourses) {
+        NSString *image_url = [item objectForKey:@"main_image"];
+        [item setValue:[self fetchImageWith:image_url] forKey:@"main_image"];
+    }
+    
+    
+    
+    return allCourses;
+}
 
 
+- (UIImage *) fetchImageWith:(NSString *)inputURL {
+    
+    NSURL *URL = [NSURL URLWithString:inputURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSError *error = nil;
+    NSURLResponse* response = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    
+    
+    
+    return [UIImage imageWithData:data];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"detailRecipeSegue"]) {
+        
+        NSIndexPath *index = [[self.recipeCollectionView indexPathsForSelectedItems] lastObject];
+        RecipeViewController *dest = (RecipeViewController *)[segue destinationViewController];
+        
+        dest.recipe = [self.recipes objectAtIndex:index.section];
+        
+        //self.recipeCollectionView in
+        
+    }
+}
 
 @end
